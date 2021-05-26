@@ -1,0 +1,2290 @@
+﻿.nodisplay,.hideView{display:none;}
+p.emptyState,div.emptyState
+{
+	width:640px;
+	margin:0 auto;
+}
+
+/* cross page link */
+a.crossLink
+{
+    position:absolute;
+    top:-17px;
+    right:-4px;
+    display:inline;
+}
+    
+/* transparent rule */
+.rule_transparent
+{
+	background:url(https://halo.bungie.net/images/reachStats/rule_transparent.png) 0 0 repeat-x;
+	height:1px;
+	font-size:0;
+	line-height:0;
+	width:640px;
+	margin:0 auto;
+	clear:both;
+}	
+	
+/* framework */
+*{padding:0;margin:0;outline:0;}
+li{list-style:none;}
+body { background: url(https://halo.bungie.net/images/reachStatsNew/bg_body.jpg) no-repeat #000 center top;height:auto;}
+	div.pagetop div.search fieldset input.text{height:15px;}
+div.sContent
+{
+	width:873px;
+	clear:both;
+	padding-top:15px;
+}
+	div.sContent div.sideNavContainer
+	{
+		width:204px;
+		float:left;
+		position:relative;
+		z-index:4;
+	}
+	div.sContent div.mainContentContainer
+	{
+		width:669px;
+		float:left;
+		position:relative;
+		z-index:1;
+	}
+	   
+/* footer */
+div.reachfooter
+{
+	clear:both;
+	width:669px;
+	padding:16px 0 0 204px;	
+}
+	a.footer-esrb {margin-left:10px;float: right;}
+	div.reachfooter div.copyLinks{float:right;width:400px;font-size:11px;}
+		div.reachfooter div.copyLinks ul{width:100%;list-style:none;float:right;}
+			div.reachfooter div.copyLinks ul li{float:right;margin-left:9px;}
+		div.reachfooter div.copyLinks p{text-align:right;font-size:11px;padding-top:5px;}
+		div.reachfooter div.copyLinks a{font-size:11px;}
+	#socialNetworking
+	{
+		float:left;
+	}
+		#socialNetworking iframe
+		{
+			display:block;
+		}
+div.footer {display: none; }	
+div.footer-menu { display: none; }
+div.fContent { display: none; }
+div.fContent{display:none;}
+
+/* side nav */
+.sideNav
+{
+    float:left;
+    width:100%;
+    list-style:none;
+}
+	.sideNav li
+	{
+		width:100%;
+		list-style:none;
+	}
+		.sideNav li h4
+		{
+			background:url(https://halo.bungie.net/images/reachStatsNew/bg_sideNav_h4.png) no-repeat left top;
+			height:40px;
+			margin:0 0 10px 0;
+			position:relative;
+			width:192px;
+		}
+			.ServiceRecord .sideNav li.serviceRecord_nav h4,
+			.CareerStats .sideNav li.careerStats_nav h4,
+			.FileShare .sideNav li.fileshare_nav h4
+			{
+				background-position:bottom left;
+				width:204px;
+			}
+			.sideNav li.reach_nav h4,.FileShare .sideNav li.fileshare_nav li.reach_nav h4{background:none;width:120px;}
+			
+			.ServiceRecord .sideNav li.serviceRecord_nav h4 span,
+			.CareerStats .sideNav li.careerStats_nav h4 span,
+			.FileShare .sideNav li.fileshare_nav h4 span
+			{
+				background:url("https://halo.bungie.net/images/reachStatsNew/bg_gradientNav.png") no-repeat scroll 0 0 transparent;
+				display:block;
+				height:40px;
+				position:absolute;
+				right:-39px;
+				top:-1px;
+				width:40px;	
+			}
+			.sideNav li h4 a
+			{
+				background:url(https://halo.bungie.net/images/reachStatsNew/sprite_sideNav_h4.png) no-repeat;
+				display:block;
+				text-indent:-9999px;
+				overflow:hidden;
+				height:15px;
+				margin:12px 0 0 0;
+				width:100%;
+				float:left;
+			}
+				.sideNav li.serviceRecord_nav h4 a
+				{
+					background-position:15px -15px;
+				}
+					.ServiceRecord .sideNav li.serviceRecord_nav h4 a,
+					.sideNav li.serviceRecord_nav h4 a:hover
+					{
+						background-position:15px 0;
+					}
+				.sideNav li.careerStats_nav h4 a
+				{
+					background-position:15px -45px;
+				}
+					.CareerStats .sideNav li.careerStats_nav h4 a,
+					.sideNav li.careerStats_nav h4 a:hover
+					{
+						background-position:15px -30px;
+					}
+				.sideNav li.fileshare_nav h4 a
+				{
+					background-position:15px -75px;
+				}
+					.FileShare .sideNav li.fileshare_nav h4 a,
+					.sideNav li.fileshare_nav h4 a:hover
+					{
+						background-position:15px -60px;
+					}
+				
+				.sideNav li.reach_nav h4 a.logo
+				{
+					background:url(https://halo.bungie.net/images/reachStats/logo_haloReach.png) no-repeat -5px 0;
+					width:120px;
+					height:50px;
+					text-indent:-9999px;
+					overflow:hidden;
+					margin:0;
+				}
+					.sideNav li.reach_nav h4 a.logo:hover
+					{
+						background-position:-5px -55px;
+					}
+		.sideNav li ul
+		{
+			margin-bottom:17px;
+		}
+		.sideNav li li
+		{
+			margin-left:52px;
+			font-size:13px;
+			line-height:18px;
+			padding-left:15px;
+			width:auto;
+		}
+			.sideNav li li.bungiePro{padding-right:10px;}
+				.sideNav li li.bungiePro p{text-align:right;color:#66696e;font-size:12px;margin:0;line-height:20px;}
+					.sideNav li li.bungiePro p a{line-height:20px;font-size:12px;}
+					.sideNav li li.bungiePro p strong{float:left;font-weight:normal;color:#66696e;line-height:20px;font-size:12px;}
+			.sideNav li li.reach_nav
+			{
+				background:url(https://halo.bungie.net/images/reachStats/rule_transparent.png) top repeat-x;
+				padding:20px 0 0 0;
+				margin:20px 0 0 66px;
+				width:120px;
+			}
+			.sideNav li li a
+			{
+				font-size:13px;
+			}
+				.sideNav li li a.linkArrow{display:inline-block;line-height:18px;height:18px;}
+			.sideNav li li.on
+			{
+				background:transparent url(https://halo.bungie.net/images/games/reach/selectedarrow.png) no-repeat scroll 0 4px;
+			}
+				.sideNav li li.on a
+				{
+					color:#fff;
+				}
+.surveyNotification
+{
+    width:100%;
+    clear:both;
+    text-align:center;
+    background:url(https://halo.bungie.net/images/account/bg_notificationBar2.png) repeat-x;
+    
+}				
+/* identity bar */
+div#IdentityBar
+{
+	width:874px;
+	height:79px;
+	margin-bottom:18px;
+	position:relative;
+	z-index:2;
+}
+	div#IdentityBar .idRankContainer
+	{
+		float:left;
+		border-right:0;
+		width:658px;
+	}
+		div#IdentityBar .idRankContainer .lattice
+		{
+			height:78px;
+			width:100%;
+			background-position:547px 0;
+		}
+		div#IdentityBar .avatar
+		{
+			float:left;
+			margin:5px;
+		}
+		div#IdentityBar .idRank
+		{
+			float:left;
+			width:573px;
+			margin-right:5px;
+		}
+			div#IdentityBar .idRank .userInfo
+			{
+				height:40px;
+				line-height:40px;
+				margin:5px 0 9px;
+				position:relative;	
+			}
+				div#IdentityBar .idRank .userInfo .credits
+				{
+					float:right;
+					font-size:20px;
+					line-height:40px;
+					color:#fff;
+					margin:4px 10px 0;
+				}
+					div#IdentityBar .idRank .userInfo .credits span
+					{
+						font-size:15px;
+					}
+				div#IdentityBar .idRank .userInfo .img_rankIcon
+				{
+					margin:4px 10px 0 0;
+					float:left;				
+				}
+				div#IdentityBar .idRank .userInfo h2
+				{
+					line-height:40px;
+					margin:3px 14px 0 0;
+					float:left;
+				}
+					div#IdentityBar .idRank .userInfo h2 a
+					{
+						text-transform:none;
+						font-size:20px;
+						font-weight:normal;
+						line-height:40px;			
+					}
+				div#IdentityBar .idRank .userInfo .img_plate
+				{
+					float:right;
+					margin-top:10px;
+				}
+				
+			div#IdentityBar .idRank .rankBar
+			{
+				height:19px;
+				border:1px solid #393c3f;
+				border-top:1px solid #999c9e;
+				border-right:0;
+				position:relative;
+			}
+				div#IdentityBar .idRank .rankBar .grade
+				{
+					position:absolute;
+					top:0;
+					left:10px;
+					height:19px;
+					line-height:19px;
+					margin:bottom:0;
+					font-size:11px;
+					color:#fff;
+					width:96%;
+					margin-bottom:0;
+				}
+					div#IdentityBar .idRank .rankBar .grade .current
+					{
+						float:left;
+					}
+					div#IdentityBar .idRank .rankBar .grade .future
+					{
+						float:right;
+					}
+				div#IdentityBar .idRank .rankBar .rankMeter
+				{
+					width:100%;
+					background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+					height:19px;
+				}
+					div#IdentityBar .idRank .rankBar .rankMeter .bar
+					{
+						height:19px;
+						background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+						position:relative;
+						width:20%;
+					}
+						div#IdentityBar .idRank .rankBar .rankMeter .bar span
+						{
+							background:url(https://halo.bungie.net/images/reachStatsNew/rankBarProgressIndicator.png) no-repeat 0 0;
+							width:7px;
+							height:23px;
+							position:absolute;
+							right:-3px;
+							top:-2px;
+						}
+	div#IdentityBar .shields
+	{
+		border-top:0;
+		border-left:0;
+		height:80px;
+		margin-top:1px;
+		width:213px;
+	}
+		div#IdentityBar .shields .lattice
+		{
+			height:78px;
+			width:100%;
+		}
+		div#IdentityBar .shields ul
+		{
+			float:left;
+			width:209px;
+			height:72px;
+			list-style:none;
+			background:url(https://halo.bungie.net/images/reachStatsNew/bg_10white.png) repeat-x bottom;
+			margin-top:3px;
+			margin-right:5px;
+			
+		}
+			div#IdentityBar .shields li
+			{
+				float:left;
+				text-align:center;
+				width:33%;
+				position:relative;
+				top:-14px;
+			}
+				div#IdentityBar .shields li p
+				{
+					color:#fff;
+					font-size:11px;
+					margin-bottom:4px;
+				}
+					div#IdentityBar .shields li.arena_display p{margin-bottom:11px;}
+			div#IdentityBar .shields li.campaign:hover div.popOut
+			{
+				display:block;
+				top:50px;
+				left:-265px;
+			}
+			#jsDisabled div#IdentityBar .shields li.arena_display:hover div.popOut
+			{
+				display:block;
+				top:50px;
+				left:-200px;
+			}
+			#arenaPercentage {
+			  position: absolute;
+			  bottom: 0pt;
+			  font-weight: bold;
+			  right: 4px;
+			}
+			
+		div#IdentityBar div.addthis_default_style
+		{
+			position:absolute;
+			bottom:-39px;
+			right:-35px;	
+		}
+			div#IdentityBar div.addthis_default_style a{margin-left:3px;}	
+
+/* General Container and Nav */
+table.centerNav
+{
+	height:49px;
+	background:url(https://halo.bungie.net/images/reachStats/bg_15white.png) repeat-x 0 0;
+	width:640px;
+	margin:0 auto 17px;
+	clear:both;
+	position:relative;
+	z-index:2;
+}
+	body.FileShare table.centerNav
+	{
+		table-layout:fixed;
+	}
+  .centerNav td
+  {
+  	text-align:center;
+  	padding-bottom:13px;
+  }
+  .centerNav td a
+  {
+  	text-transform:uppercase;
+  	font-size:12px;
+  	text-align:center;
+  	width:100%;
+  	height:36px;
+  	line-height:33px;
+  	display:block; 
+  	white-space:nowrap; 	
+  }
+  .centerNav td.on
+  {
+  	background:url(https://halo.bungie.net/images/reachStats/bg_nav_tabbed_on.png) no-repeat center bottom;
+  }
+    .centerNav td.on a
+    {
+    	color:#fff;
+    	background:#636974;
+    }		
+	
+/* Generic Drop Downs */
+.dropDown
+{
+	background:transparent url(https://halo.bungie.net/images/reachStats/bg_dropDown_leftCurved.png) no-repeat scroll left top;
+	display:inline-block;
+	margin-right:12px;
+	padding-left:12px;
+	cursor:pointer;	
+}
+	.dropDown:hover
+	{
+		background:transparent url(https://halo.bungie.net/images/reachStats/bg_dropDown_left_solid.png) no-repeat scroll left top;
+	}
+	.dropDown li
+	{
+		background:transparent url(https://halo.bungie.net/images/reachStats/bg_dropDown_rightCurved.png) no-repeat scroll right top;
+		height:27px;
+		left:0;
+		padding-right:12px;
+		position:relative;
+		text-align:left;
+		top:0;
+		width:100%;
+		list-style:none;
+	}
+		.dropDown li a
+		{
+			background:transparent url(https://halo.bungie.net/images/reachStats/icon_dropDownArrow_small.png) no-repeat scroll 100% 58%;
+			display:block;
+			height:27px;
+			line-height:27px;
+			padding-right:20px;
+			position:relative;
+			z-index:3;
+			top:0;
+			left:0;
+			font-size:11px;
+		}		
+		.dropDown:hover li
+		{
+			background:transparent url(https://halo.bungie.net/images/reachStats/bg_dropDown_right_solid.png) no-repeat scroll right top;
+		}
+			.dropDown:hover li ul
+			{
+				left:-12px;
+			}
+		.dropDown li ul
+		{
+			background:#333333 none repeat scroll 0 0;
+			left:-99999px;
+			position:absolute;
+			top:18px;
+			border:2px solid #888;
+			border-top:0;
+			-moz-border-radius-bottomleft: 10px;
+			-moz-border-radius-bottomright: 10px;
+			-webkit-border-bottom-left-radius: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+			width:100%;
+			padding-right:8px;	
+			
+			
+			
+		}
+			.dropDown li ul li
+			{
+				background:none;
+				clear:both;
+				float:left;
+				height:auto;
+				width:100%;
+				margin-bottom:7px;
+			}
+				.dropDown:hover ul li
+				{
+					background:none;
+				}
+				.dropDown li ul li a
+				{
+					background:none;
+					display:block;
+					float:left;
+					width:100%;
+					line-height:1.1em;
+					height:auto;
+					padding-bottom:0;
+					padding:0 0 0 12px;
+				}
+					
+					.dropDown li ul li:first-child a
+					{
+						padding-top:7px;
+					}
+	div.gameHistoryTableContainer table th.rgHeader:hover {
+		z-index: 6;
+	}
+	.PlayerGameHistory .dropDown li ul
+	{
+		border:0;
+		background:none transparent;
+		position:relative;
+		top:auto;	
+		overflow:auto;
+		overflow-x:hidden;
+		max-height:200px;
+		padding:0;
+		width:100%;
+		left:auto;
+		
+	}
+	
+	
+	
+	.PlayerGameHistory .dropDown:hover li a
+	{
+		background:none;
+	}
+	.PlayerGameHistory .dropDown li div
+	{
+		
+		background:#333333 none repeat scroll 0 0;
+		left:-99999px;
+		position:absolute;
+		top:18px;
+		border-left:2px solid #888;
+		width:200px;
+		
+		max-height:210px;
+		padding-top:10px;			
+	}
+		.PlayerGameHistory .dropDown:hover li div
+		{
+			left:-12px;
+		}
+	
+		
+		
+
+/* Standard Glow Box */
+.glowBox
+{
+	border:1px solid #404040;
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_40black.png);
+	position:relative;
+	top:0;
+	left:0;
+	float:left;
+}
+	.glowBox .corner
+	{
+		width:62px;
+		height:59px;
+		background:url(https://halo.bungie.net/images/reachStats/sprite_glowCorners_62_59.png) no-repeat;
+		position:absolute;
+		z-index:1;
+	}
+		.glowBox .topLeft
+		{
+			background-position:0 0;
+			top:-1px;
+			left:-1px;
+		}
+		.glowBox .topRight
+		{
+			background-position:-62px 0;
+			top:-1px;
+			right:-1px;
+		}
+		.glowBox .bottomLeft
+		{
+			background-position:0 -59px;
+			bottom:-1px;
+			left:-1px;
+		}
+		.glowBox .bottomRight
+		{
+			background-position:-62px -59px;
+			bottom:-1px;
+			right:-1px;
+		}
+	.glowBox .lattice
+	{
+		position:absolute;
+		z-index:2;
+		top:0;
+		right:0;
+	}
+	.glowBox .content
+	{
+		position:relative;
+		z-index:3;
+		float:left;
+		width:100%;
+		
+	}
+
+div.intelSearch fieldset.track
+{
+	border:0;
+	text-align:right;
+	padding:0;
+	width:640px;
+	clear:both;
+	position:relative;
+	padding-bottom:16px;
+}
+	div.intelSearch fieldset.track strong{float:left;line-height:20px;}
+	div.intelSearch fieldset.track label
+	{
+		margin-right:10px;
+		font-size:13px;
+	}
+	div.intelSearch fieldset.track input.text
+	{
+		border:0;
+		height:18px;
+		width:200px;
+		position:relative;
+		z-index:1;
+		vertical-align:bottom;
+	}
+	div.intelSearch fieldset.track input.submit
+	{
+		background:url("https://halo.bungie.net/images/base_struct_images/search/searchbutton.png") no-repeat 0 0;
+		width:24px; 
+		height:20px;
+		margin-left:-13px;
+		border:0;
+		text-indent:-9999px;
+		overflow:hidden;
+		cursor:pointer;
+		padding:0;
+		z-index:2;
+		position:relative;
+		top:1px;
+		
+		vertical-align:bottom;
+		
+	}
+		div.intelSearch fieldset.track input.submit:hover
+		{
+			background-position:0 -20px;
+		}
+
+
+/* main content */
+.mainContentContainer{}
+	div.sContent div.mainContentContainer:hover{z-index:3;}/* popOuts that need to overlay the identity bar(z-index:2) */
+	
+.mainContentContainer h2, .mainContentContainer div.pager
+{
+	border-top:1px solid #404040;
+	border-left:1px solid #404040;
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_40black.png);
+	height:24px;
+	position:relative;
+	width:200px;
+	float:left;
+	color:#aaa;
+	font-style:italic;
+	text-transform:capitalize;
+	font-size:13px;
+	line-height:36px;
+	text-indent:14px;
+}
+	.mainContentContainer h2 span, .mainContentContainer div.pager span
+	{
+		background:url(https://halo.bungie.net/images/reachStatsNew/bg_h2_corner.png) no-repeat right;
+		display:block;
+		position:absolute;
+		top:0;
+		right:-24px;
+		width:24px;
+		height:24px;
+	}
+.mainContentContainer .mainPanel
+{
+	float:left;
+	width:100%;
+}
+div.mainGlowBox
+{
+	border-top:0;
+	width:667px;
+	padding:14px 0;
+	min-height:700px;	
+}
+	div.mainGlowBox div.lattice
+	{
+		width:444px;
+		height:200px;
+		border-top:1px solid #404040;
+		top:-1px;
+		z-index:1;
+	}
+	div.mainGlowBox div.corner
+	{
+		z-index:2;
+	}
+
+div.errorGlowBox{border-top:1px solid #404040;}
+
+div.latticeBox
+{
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_heading_latticeBox.png) no-repeat 0 0;
+	width:640px;
+	margin:0 auto 12px;
+	clear:both;
+}
+	div.latticeBox h3
+	{
+		width:100%;
+		margin:0;
+		text-align:right;
+		font-weight:bold;
+		font-size:13px;
+		color:#ececec;
+		line-height:42px;
+	}
+		div.latticeBox h3 a
+		{
+			float:right;
+			width:auto;
+			margin:0 12px;
+		}
+
+/* bar graphs on service record and player game history */
+.victoryStreaks
+{
+	width:640px;
+}		
+	.barGraphContainer
+	{
+		width:100%;
+		height:92px;
+		clear:both;
+	}		
+		.barGraphContainer .legend
+		{
+			width:80px;
+			float:left;
+			position:relative;
+			top:-10px;
+		}
+			.barGraphContainer .legend p
+			{
+				font-size:11px;
+				color:#777;
+				line-height:21px;
+				padding-left:10px;
+			}
+				.barGraphContainer .legend p:first-child
+				{
+					color:#fff;
+				}
+	.barGraphContainer .barGraph
+	{
+		width:550px;
+		float:left;
+		background:url(https://halo.bungie.net/images/reachStatsNew/bg_barGraph_lines.png) repeat-x;
+		padding-left:10px;
+	}
+		div.barGraph div.gamePanel
+		{
+			width:21px;
+        	height:84px;
+        	float:left;
+			text-align:center;
+			position:relative;
+			cursor:pointer;
+			margin-right:1px;
+		}
+			#jsDisabled div.barGraph div.gamePanel:hover div.popOut
+			{
+				display:block;
+				top:-302px;
+				left:-215px;
+			}
+			div.barGraph div.gamePanel a
+			{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:84px;
+			}
+				div.barGraph div.gamePanel a:hover
+				{
+					background:url(https://halo.bungie.net/images/reachStats/bg_25black.png);
+				}
+				
+			div.barGraph div.last
+            {
+            	margin-right:0;
+            }
+			div.barGraph div.gamePanel div.heightBar
+			{
+				border:0;
+				float:none;
+				width:100%;
+				left:0;	        	
+			}
+				div.barGraph div.gamePanel div.heightBar div.bar
+				{
+					width:100%;
+					left:0;
+				}
+            
+				div.barGraph div.blue div.heightBar
+				{
+        			
+        			height:66px;
+					font-size:11px;
+					color:#57acd0;
+					position:absolute;
+					bottom:18px;
+					
+				}
+					div.barGraph div.blue div.heightBar div.bar{height:0;background:url(https://halo.bungie.net/images/reachStatsNew/bg_bar_blueFade.png) no-repeat bottom;position:absolute;bottom:0;}
+					div.barGraph div.blue div.heightBar span
+					{
+            			position:relative;
+            			bottom:-70px;
+            			left:0;
+					}
+					
+				div.barGraph div.cpff div.heightBar
+				{
+        			
+        			height:66px;
+					font-size:11px;
+					color:#57acd0;
+					position:absolute;
+					bottom:18px;
+					
+				}
+					div.barGraph div.cpff div.heightBar div.bar{height:0;background:url(https://halo.bungie.net/images/reachStatsNew/bg_bar_cpffFade.png) no-repeat bottom;position:absolute;bottom:0;}
+					div.barGraph div.cpff div.heightBar span
+					{
+            			position:relative;
+            			bottom:-70px;
+            			left:0;
+					}	
+					
+				div.barGraph div.red div.heightBar
+				{
+    				
+    				height:18px;
+    				top:66px;
+    				color:#b82020;
+		        	position:absolute;
+				}
+					div.barGraph div.red div.heightBar div.bar{position:absolute;top:0;height:0;background:url(https://halo.bungie.net/images/reachStatsNew/bg_bar_blackFade.png) no-repeat top;}
+					div.barGraph div.red div.heightBar span
+					{
+        				position:relative;
+        				top:9px;
+        				left:0;
+        				color:#ffc6c6;
+        				display:none;
+					}		
+
+/* career stats type header with the center nav */
+.mainContentContainer .header
+{
+	width:640px;
+	margin:0 auto -70px;
+	height:200px;
+	background-repeat:no-repeat;	
+}
+	.mainContentContainer .allHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/all.png);}
+	.mainContentContainer .invasionHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/invasion.png);}
+	.mainContentContainer .firefightHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/firefight.png);}
+	.mainContentContainer .customHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/custom.png);}
+	.mainContentContainer .competitiveHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/competitive.png);}
+	.mainContentContainer .campaignHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/campaign.png);}
+	.mainContentContainer .slayerarenaHeader{background-image:url(https://halo.bungie.net/images/reachStats/mode_headers/arena.png);}
+	.mainContentContainer .arena_doublesHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/arena_doubles.png);}
+	.mainContentContainer .arena_ffaHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/arena_ffa.png);}
+	.mainContentContainer .arena_teamHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/arena_team.png);}
+	.mainContentContainer .bigteambattleHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/bigteambattle.png);}
+	.mainContentContainer .campaign_coopHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/campaign_coop.png);}
+	.mainContentContainer .firefight_coopHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/firefight_coop.png);}
+	.mainContentContainer .firefight_scoreattackHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/firefight_scoreattack.png);}
+	.mainContentContainer .invasionHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/invasion.png);}
+	.mainContentContainer .multiteamHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/multiteam.png);}
+	.mainContentContainer .rumblepitHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/rumblepit.png);}
+	.mainContentContainer .team_objectiveHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/team_objective.png);}
+	.mainContentContainer .team_slareHeader{background-image:url(https://halo.bungie.net/images/reachStats/playlists/headers/team_slayer.png);}
+	.mainContentContainer .beachheadHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/beachhead.png);}
+	.mainContentContainer .cp_spoilerHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/cp_spoiler.png);}
+	.mainContentContainer .exodusHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/exodus.png);}
+	.mainContentContainer .ff_corvetteHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_corvette.png);}
+	.mainContentContainer .ff_courtyardHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_courtyard.png);}
+	.mainContentContainer .ff_glacierHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_glacier.png);}
+	.mainContentContainer .ff_holdoutHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_holdout.png);}
+	.mainContentContainer .ff_outpostHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_outpost.png);}
+	.mainContentContainer .ff_overlookHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_overlook.png);}
+	.mainContentContainer .ff_waterfrontHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/ff_waterfront.png);}
+	.mainContentContainer .lonewolfHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/lonewolf.png);}
+	.mainContentContainer .longnightofsolaceHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/longnightofsolace.png);}
+	.mainContentContainer .mp_boardwalkHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_boardwalk.png);}
+	.mainContentContainer .mp_boneyardHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_boneyard.png);}
+	.mainContentContainer .mp_countdownHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_countdown.png);}
+	.mainContentContainer .mp_forgeworldHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_forgeworld.png);}
+	.mainContentContainer .mp_powerhouseHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_powerhouse.png);}
+	.mainContentContainer .mp_reflectionHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_reflection.png);}
+	.mainContentContainer .mp_spireHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_spire.png);}
+	.mainContentContainer .mp_swordbaseHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_swordbase.png);}
+	.mainContentContainer .mp_zealotHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_zealot.png);}
+	.mainContentContainer .newalexandriaHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/newalexandria.png);}
+	.mainContentContainer .nightfallHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/nightfall.png);}
+	.mainContentContainer .oniHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/oni.png);}
+	.mainContentContainer .pillarofautumnHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/pillarofautumn.png);}
+	.mainContentContainer .thepackageHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/thepackage.png);}
+	.mainContentContainer .tipofthespearHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/tipofthespear.png);}
+	.mainContentContainer .wintercontingencyHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/wintercontingency.png);}
+	
+	.mainContentContainer .mp_anchor9Header{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_anchor9.png);}
+	.mainContentContainer .mp_breakpointHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_breakpoint.png);}
+	.mainContentContainer .mp_tempestHeader{background-image:url(https://halo.bungie.net/images/reachStats/maps/map_headers/mp_tempest.png);}
+	
+div.latticeBox ul.tabs
+{
+	float:right;
+	padding:15px 0;	
+}
+	div.latticeBox ul.tabs li
+	{
+		float:left;
+		border-left:1px solid #fff;
+		padding:0 6px;
+		list-style:none;
+	}
+		div.latticeBox ul.tabs li a
+		{
+			font-size:13px;
+		}
+			div.latticeBox ul.tabs li:first-child
+			{
+				border-left:0;
+			}
+			div.latticeBox ul.tabs li.on a
+			{
+				color:#ececec;
+			}
+/* leaderboards and game history tables */
+div.gameHistoryTableContainer
+{
+	width:640px;
+	margin:0 auto;
+	clear:both;
+}
+	div.gameHistoryTableContainer table
+	{
+		float:left;
+	}
+		div.gameHistoryTableContainer table tr:hover td p,
+		div.gameHistoryTableContainer table tr.rgAltRow:hover td p
+		{
+			background:url(https://halo.bungie.net/images/reachStatsNew/bg_40black.png);
+		}
+		div.gameHistoryTableContainer table th.rgHeader
+		{
+			height:42px;
+			padding:6px 0 0;
+			position:relative;
+			vertical-align:top;
+			z-index:4;
+		}
+			div.gameHistoryTableContainer table th p
+			{
+				text-align:center;
+				height:26px;
+				line-height:26px;
+				margin-bottom:0;
+			}
+			div.gameHistoryTableContainer table th:first-child p
+			{
+				text-align:left;
+			}
+			div.gameHistoryTableContainer table th .dropDown
+			{
+				width:75%;
+			}
+				div.gameHistoryTableContainer table th .dropDown ul
+				{
+					z-index:2;
+				}
+		div.gameHistoryTableContainer table tr td
+		{
+			height:32px;
+			vertical-align:top;
+			padding:0 !important;
+			position:relative;
+			z-index:1;
+			border-top:1px solid #5c5c5c;
+		}
+			div.gameHistoryTableContainer table tr.rgPager td{border-top:0;}
+			div.gameHistoryTableContainer table tr td:first-child{position:relative;z-index:2;}
+			div.gameHistoryTableContainer table tr td p
+			{
+				background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+				line-height:25px;
+				height:25px;
+				font-size:11px;
+				position:relative;
+				padding:0 10px;
+				z-index:1;
+				white-space:nowrap;
+				margin-bottom:0;
+				text-align:center;
+			}
+				div.gameHistoryTableContainer table tr td p.outcome
+				{
+					text-align:left;
+				}
+				div.gameHistoryTableContainer table tr td.place
+				{
+					color:#fff;
+				}
+				div.gameHistoryTableContainer table tr td p a
+				{
+					line-height:25px;
+					font-size:11px;
+				}
+				div.gameHistoryTableContainer table tr td p a.overlay
+				{
+					position:absolute;
+					top:0;
+					left:0;
+					width:638px;
+					height:23px;
+					display:block;
+					cursor:pointer;
+					z-index:3;
+					background:url(../images/reachStats/blank.gif);	
+				}
+		div.gameHistoryTableContainer table tr.rgAltRow td p
+		{
+			background:url(https://halo.bungie.net/images/reachStatsNew/bg_10white.png);
+		}
+
+/* general floating label */
+fieldset.floatingLabels
+{
+	position:relative;
+} 
+	fieldset.floatingLabels label
+	{
+		position:absolute;
+		line-height:19px;
+		left:-9999px;
+		top:0;	
+		z-index:2;
+	}
+		fieldset.floatingLabels label.floated
+		{
+			left:5px;
+			top:0;
+		}
+	
+/* files list */	
+ul.fileShareList
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+	ul.fileShareList li
+	{
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		text-align:left;
+		padding-bottom:10px;
+		position:relative;
+		top:0;
+		left:0;
+		border:2px solid #414344;
+		width:636px;
+		margin:0 auto 12px auto;	
+	}
+		ul.fileShareList li a.thumbLink
+		{
+			float:left;
+			margin:10px 19px 0 10px;
+		}
+		ul.fileShareList li a span.fileset
+		{
+			background:url("https://halo.bungie.net/images/reachOnline/btn_infileset.png") no-repeat;
+			text-indent:-99999px;
+			display:block;
+			width:76px;
+			height:29px;
+			font-size:11px;
+			left:10px;
+			line-height:22px;
+			position:absolute;
+			top:100px;
+			white-space:nowrap;
+			overflow:hidden;
+		}
+		
+		ul.fileShareList li img
+		{
+		}
+	
+		ul.fileShareList li .info
+		{
+			float:left;
+			width:397px;
+			padding-bottom:24px;
+		}
+			ul.fileShareList .info div.corner
+			{
+				display:none;
+			}
+			ul.fileShareList .info div.content
+			{
+				position:static;
+			}
+			ul.fileShareList li div.info p img{float:none;margin:0;}
+			ul.fileShareList li h5
+			{
+				font-size:17px;
+				margin-top:10px;
+				margin-bottom:3px;
+				overflow:hidden;
+				width:285px;
+			}
+			
+				ul.fileShareList li h5 a
+				{
+					font-size:17px;
+					line-height:20px;
+				}
+			ul.fileShareList li p
+			{
+				margin-bottom:3px;
+				width:285px;
+			}
+				ul.fileShareList li .description
+				{
+					color:#777;
+					font-style:italic;
+					overflow:hidden;
+				}
+				ul.fileShareList li .emptyState
+				{
+					padding:10px;
+					color:#777;
+					font-style:italic;
+					width:auto;
+				}
+
+	
+/* actions for files */
+ul.actions
+{
+	position:absolute;
+	bottom:10px;
+}
+	
+	ul.actions li
+	{
+		border:0;
+		width:auto;
+		height:auto;
+		margin:0;
+		padding:0;
+		display:inline-block;
+		vertical-align:middle;
+		background:none;
+	}
+		ul.actions li a
+		{
+			padding-left:37px;
+			float:left;
+			background:url(https://halo.bungie.net/images/reachStats/sprite_fileShare.png) no-repeat;
+			font-size:14px;
+			margin-right:21px;
+		}
+			ul.actions li.copy a
+			{
+				background-position:-485px -171px;
+				height:25px;
+				line-height:25px;
+				padding-left:29px;
+			}
+				ul.actions li.copy a:hover
+				{
+					background-position:-485px -200px;
+				}
+			ul.actions li.trophy a
+			{
+				background-position:-480px -120px;
+				line-height:25px;
+				height:25px;
+			}
+				ul.actions li.trophy a:hover
+				{
+					background-position:-480px -145px;
+				}
+			ul.actions li.add a
+			{
+				background-position:-480px -40px;
+				line-height:21px;
+				height:21px;
+			}
+				ul.actions li.add a:hover
+				{
+					background-position:-480px -65px;
+				}
+			ul.actions li.delete a
+			{
+				background-position:-480px -89px;
+				line-height:16px;
+				height:16px;
+				padding-left:31px;
+			}
+				ul.actions li.delete a:hover
+				{
+					background-position:-480px -104px;
+				}
+				
+			ul.actions li.download a
+			{
+				background-position:-485px 0px;
+				height:20px;
+				line-height:20px;
+				padding-left:31px;
+			}
+				
+				ul.actions li.download a:hover
+				{
+					background-position:-485px -20px;
+				}
+				ul.actions li.download a span
+				{
+					color:#fff;
+				}
+					ul.actions li.download a:hover span
+					{
+						color:#fff;
+						text-decoration:none;
+					}
+			ul.actions li.receipt a
+			{
+				background-position:-493px -277px;
+				height:22px;
+				line-height:22px;
+				padding-left:25px;
+			}
+				ul.actions li.receipt a:hover
+				{
+					background-position:-493px -302px;
+				}
+							
+		
+			ul.actions li.spam a
+			{
+				background-position:-491px -230px;
+				line-height:21px;
+				height:21px;
+				padding-left:31px;
+				margin-top:-1px;
+			}
+				ul.actions li.spam a:hover
+				{
+					background-position:-491px -254px;
+				}
+			ul.actions li.buy a
+			{
+				background:url(https://halo.bungie.net/images/reachOnline/sprite_icons.png) no-repeat;
+				background-position:-105px -40px;
+				line-height:17px;
+				height:17px;
+				padding-left:27px;
+				margin-right:0;
+			}
+			ul.actions li.renderFilm a
+			{
+				background:url(https://halo.bungie.net/images/reachOnline/sprite_icons.png) no-repeat;
+				background-position:-100px -90px;
+				line-height:17px;
+				height:17px;
+				padding-left:34px;
+				margin-right:0;
+			}
+				ul.actions li.renderFilm a:hover
+				{
+					background-position:-100px -110px;
+				}
+			ul.actions li.downloadWMV
+			{
+				background:url(https://halo.bungie.net/images/reachStats/sprite_fileShare.png) no-repeat;
+				background-position:-480px -20px;
+				padding-left:37px;
+				margin-right:13px;
+				font-size:14px;
+				color:#fff;
+				height:20px;
+				line-height:20px;
+			}			
+				ul.actions li.downloadWMV a
+				{
+					background:none;
+					margin-right:0;
+					padding-left:0;
+					float:none;
+				}	
+
+/* file like icons */	
+
+a.bpro_file_link {
+	float:right;
+	text-align:center;
+	height:12px;
+	padding-top: 0px;
+	width:63px;
+	display:block;
+	cursor:pointer;
+	margin-right:11px;
+	margin-top:7px;
+	font-size: 11px;
+	clear: right;
+}
+		
+.like
+{
+	float:right;
+	text-align:center;
+	background:url(https://halo.bungie.net/images/reachStats/sprite_fileShare.png) no-repeat;
+	background-position:-410px -37px;
+	height:31px;
+	padding-top:40px;
+	width:63px;
+	display:block;
+	cursor:pointer;
+	margin-right:11px;
+	margin-top:10px;
+}
+	.like:hover
+	{
+		opacity:.8;
+	}
+	
+.starLike
+{
+	background:url(https://halo.bungie.net/images/reachStats/icon_likestar.png) no-repeat 0 0;
+	width:59px;
+}
+.fireLike
+{
+	background-position:-235px -25px;
+	width:100px;
+	height:33px;
+	padding-top:51px;
+	margin-right:-2px;
+	margin-top:0;
+}
+	.fireLike span
+	{
+		display:block;
+		margin-left:24px;
+		text-align:center;
+		width:63px;
+	}
+.medLike
+{
+	background-position:-345px -37px;
+	
+}
+.basicLike
+{
+	background-position:-410px -37px;
+}
+				
+			
+			
+a.btn_more
+{
+	clear:both;
+	display:block;
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_glowButton_640.png) no-repeat;
+	width:640px;
+	margin:0 auto;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	font-size:13px;
+	text-transform:uppercase;
+}
+
+/* pop out */
+div.popOut
+{
+	position:absolute;
+	display:none;
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_popup.png);
+	z-index:1000;
+}
+	div.popOut div.content
+	{
+		padding:21px 10px 10px 10px;
+	}
+	div.popOut h4
+	{
+		background:url(https://halo.bungie.net/images/reachStatsNew/bg_popOut_h4.png) repeat-x 0 0;
+		height:21px;
+		line-height:21px;
+		width:100%;
+		color:#000;
+		font-size:14px;
+		margin:0;
+		text-indent:10px;
+		position:absolute;
+		top:0;
+		left:0;
+		font-weight:bold;
+		text-align:left;
+	}
+	div.popOut h5
+	{
+		color:#fff;
+		font-size:12px;
+		padding-top:10px;
+		margin-bottom:8px;
+		text-align:left;
+	}
+	div.popOut p
+	{
+		text-align:right;
+		color:#fff;
+		margin:0;
+		line-height:22px;
+		clear:both;		
+	}
+		div.popOut p strong
+		{
+			float:left;
+			font-weight:normal;
+			font-size:12px;
+			line-height:22px;
+		}
+		div.popOut p a
+		{
+			font-size:12px;
+			line-height:22px;
+		}
+		
+	div.popOut div.rule_transparent
+	{
+		width:100%;
+		margin:5px 0;
+	}
+	div.popOut div.twoColumn
+	{
+		position:relative;
+	}
+		
+		div.popOut div.twoColumn p
+		{
+			color:#999;
+			font-size:11px;
+			line-height:18px;
+		}
+			div.popOut div.twoColumn p strong
+			{
+				font-size:11px;
+				line-height:18px;
+			}
+			div.popOut div.twoColumn p em
+			{
+				font-style:normal;
+				color:#fff;
+			}
+			div.popOut div.twoColumn p a
+			{
+				font-size:11px;
+				line-height:18px;
+			}
+			div.popOut div.twoColumn p img
+			{
+				position:static;
+				vertical-align:middle;
+			}
+		div.popOut div.twoColumn img
+		{
+			left:-17px;
+			position:absolute;
+			top:0;
+			z-index:2;
+		}
+		div.po_career{}
+			div.po_career div.content
+			{
+				width:167px;
+			}
+		div.po_arenaOverview
+		{
+		}
+			div.po_arenaOverview div.content
+			{
+				width:274px
+			}
+			div.po_arenaOverview .weapon
+			{
+				height:51px;
+				line-height:51px;
+			}
+			div.po_arenaOverview div.medalsList
+			{
+				width:100%;
+				overflow:hidden;
+			}
+				div.po_arenaOverview ul.medalsList
+				{
+					position:relative;
+					padding-top:5px;
+					width:280px;
+				}
+					div.po_arenaOverview .medalsList li
+					{
+						background:url(https://halo.bungie.net/images/reachStatsNew/bg_medalsBox.png) no-repeat;
+						width:50px;
+						height:45px;
+						float:left;
+						text-align:center;
+						position:relative;
+						padding:6px 6px 28px 0;
+						clear:none;
+						margin-bottom:0;
+					}
+						div.po_arenaOverview .medalsList li.last
+						{
+							padding-right:0;
+						}
+							div.po_arenaOverview .medalsList li.last p
+							{
+								padding-right:0;
+							}
+						div.po_arenaOverview .medalsList li img
+						{
+							width:34px;
+							height:34px;
+						}
+						div.po_arenaOverview .medalsList li p
+						{
+							background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+							height:25px;
+							line-height:25px;
+							margin-bottom:0;
+							position:absolute;
+							bottom:0;
+							padding-right:6px;
+							width:50px;
+							left:0;
+							text-align:center;
+						}			
+		div.po_campaign
+		{
+		}
+			div.po_campaign div.content
+			{
+				width:266px;
+			}
+			div.po_campaign div.content p,div.po_campaign div.content h5{padding-left:64px;}
+		div.po_weapon
+		{
+		}
+			div.po_weapon div.content
+			{
+				width:248px;
+			}
+		div.po_arenaSeason2
+		{
+		}
+			div.po_arenaSeason2 div.content
+			{
+				width:188px;
+			}
+				div.po_arenaSeason2 div.content div.twoColumn img
+				{
+					left:0;
+					top:12px;
+				}
+				div.po_arenaSeason2 div.content div.twoColumn h5
+				{
+					padding-left:64px;
+				}
+				div.po_arenaSeason2 div.content div.twoColumn p
+				{
+					text-align:left;
+					padding-left:64px;
+				}
+		div.po_victory
+		{
+		}
+			div.po_victory div.content
+			{
+				width:188px;
+				padding-top:103px;
+			}
+				div.po_victory img.background
+				{
+					position:absolute;
+					left:0;
+					top:21px;
+					z-index:1;
+				}
+				
+				div.po_victory img.icon
+				{
+					position:absolute;
+					top:43px;
+					left:20px;
+					z-index:2;
+				}
+				
+				
+				div.po_victory h5
+				{
+					font-size:18px;
+					margin:0;
+				}
+				div.po_victory p.location
+				{
+					text-align:left;
+					font-size:10px;
+				}
+		div.po_multiplayer
+		{
+		}
+			div.po_multiplayer div.content
+			{
+				width:266px;
+			}
+				div.po_multiplayer div.content p
+				{
+					text-align:left;
+					color:#999;
+					font-size:11px;
+					line-height:18px;
+				}
+					div.po_multiplayer div.content p.nextTier
+					{
+						text-align:right;
+					}
+						div.po_multiplayer div.content p.nextTier img
+						{
+							vertical-align:middle;
+						}
+				div.po_multiplayer div.barContainer
+				{
+					height:17px;
+					width:252px;
+					position:relative;
+					padding:7px;
+					margin:5px 0;
+				}
+					div.po_multiplayer div.firefight{background:url(https://halo.bungie.net/images/reachStatsNew/bg_30red.png);}
+					div.po_multiplayer div.campaign{background:url(https://halo.bungie.net/images/reachStatsNew/bg_30green.png);}
+					div.po_multiplayer div.multiplayer{background:url(https://halo.bungie.net/images/reachStatsNew/bg_30blue.png);}
+					div.po_multiplayer div.barContainer div.bar
+					{
+						height:17px;
+
+						width:30%;
+					}
+						div.po_multiplayer div.multiplayer div.bar{background:#446380;}
+						div.po_multiplayer div.firefight div.bar{background:#94352A;}
+						div.po_multiplayer div.campaign div.bar{background:#55533a;}
+						
+					div.po_multiplayer div.barContainer span
+					{
+						position:absolute;
+						right:7px;
+						top:8px;
+						font-size:11px;
+						color:#fff;					
+					}
+					
+			
+			
+		div.po_medal
+		{
+		}
+			div.po_medal div.content
+			{
+				width:266px;
+				min-height:99px;
+			}
+				div.po_medal div.content p,div.po_medal div.content h5{padding-left:96px;line-height:15px;background:none;}		
+				div.po_medal div.content div.twoColumn img{top:11px;left:-2px;}
+		div.po_playerInfo
+		{
+		}
+			div.po_playerInfo div.content
+			{
+				width:336px;
+				min-height:286px;
+			}
+				div.po_playerInfo div.content h4
+				{
+					text-transform:none;
+				}
+				div.po_playerInfo div.content div.twoColumn{padding-top:10px;}
+				div.po_playerInfo div.content div.twoColumn p
+				{
+					padding-left:121px;
+					width:214px;
+					margin-top:0;
+					text-transform:none;
+				}
+				div.po_playerInfo div.content div.twoColumn ul.medalsList
+				{
+					margin-left:121px;
+				}
+					div.po_playerInfo div.content div.twoColumn ul.medalsList li
+					{
+						
+					}
+						div.po_playerInfo div.content div.twoColumn ul.medalsList li p
+						{
+							margin:0;
+							padding:0;
+							text-align:center;
+							line-height:30px;
+							width:100%;
+							
+						}
+					div.po_playerInfo div.content div.twoColumn ul.medalsList img
+					{
+						position:static;
+					}
+				div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer
+				{
+					margin-left:121px;
+					width:215px;
+					margin:0 0 12px 121px;
+
+				}
+					div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer p
+					{
+						color:#888888;
+						font-size:11px;
+						text-align:left;
+						text-transform:none;
+						padding:0;
+						margin-bottom:5px;
+					}
+						div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer p span.kills
+						{
+							color:#71caef;
+						}
+						div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer p span.deaths
+						{
+							color:#cb2727;
+						}
+					div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.lineGraph{position:relative;}
+					div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.background{width:100%;position:absolute;top:9px; left:0;}
+						div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.background div{width:100%;background:#121212;margin-top:5px;height:24px;}
+							div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.background div.first{margin-top:0;}
+							div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.background div span{width:24px;line-height:24px;height:24px;float:left;text-align:center;color:#fff;background:#282828;font-size:10px;font-weight:bold;}
+							
+					div.po_playerInfo div.content div.twoColumn div.playerInfoLineContainer div.lineGraph
+					{
+						width:100%;
+						clear:both;
+					}
+/* career stats alternating list  - used on service record and career stats overview */
+div.careerStats{}       
+	div.careerStats ul.alternatingList
+	{
+		position:relative;
+		float:left;
+	}
+		div.careerStats ul.alternatingList li
+		{
+			background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+			border-top:1px solid #5c5c5c;
+			width:192px;
+			height:26px;
+			line-height:26px;
+			list-style:none;
+			margin-bottom:3px;
+			padding:0 10px;
+			font-size:11px;
+			text-align:right;
+		}
+			div.careerStats ul.alternatingList li.alt
+			{
+				background:url(https://halo.bungie.net/images/reachStatsNew/bg_10white.png);
+				border-top:1px solid #5c5c5c;
+			}
+			div.careerStats ul.alternatingList li:hover, div.careerStats ul.alternatingList li.alt:hover{background:url(https://halo.bungie.net/images/reachStatsNew/bg_40black.png);}
+			div.careerStats ul.alternatingList li strong
+			{
+				float:left;
+				color:#fff;
+				font-weight:normal;
+				white-space:nowrap;
+			}
+			div.careerStats ul.alternatingList li span
+			{
+				color:#ababab;
+			}
+			div.careerStats ul.alternatingList li.gamesPlayed
+			{
+				margin-right:0;
+				position:absolute;
+				top:13px;
+				right:-208px;
+				width:182px;
+				background:none;
+				border:0;
+			}
+				div.careerStats ul.alternatingList li.gamesPlayed span
+				{
+					font-size:15px;
+					left:0;
+					position:absolute;
+					text-align:center;
+					top:83px;
+					width:100%;
+					color:#fff;
+				}						
+				
+/* medals list */
+ul.medalsList
+{
+	clear:both;
+	width:100%;
+}
+	ul.medalsList li
+	{
+		background:url(https://halo.bungie.net/images/reachStatsNew/bg_medalsBox.png) no-repeat;
+		width:50px;
+		height:45px;
+		float:left;
+		text-align:center;
+		position:relative;
+		padding:2px 3px 28px 0;
+		clear:none;
+	}
+		ul.medalsList li.last
+		{
+			padding-right:0;
+		}
+		#jsDisabled ul.medalsList li:hover div.popOut
+		{
+			display:block;
+			right:27px;
+			left:auto;
+			bottom:53px;
+			top:auto;
+		}
+			ul.playlistList ul.medalsList div.popOut h4 
+			{
+				color:#000000;
+				font-size:14px;
+				height:21px;
+				margin:0;
+				overflow:visible;
+				position:absolute;
+			}
+			ul.playlistList ul.medalsList li div.popOut p {
+				line-height:18px;
+			}
+							
+		ul.medalsList li p
+		{
+			margin-bottom:0;
+			line-height:30px;
+		}	
+		
+/* Challenges List */
+h3.dailyChallengesHeader
+{
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_10white.png);
+	line-height:28px;
+	font-size:12px;
+	width:604px;
+	margin:0 auto 16px;
+	padding:0 18px;
+	text-transform:none;
+}
+	h3.dailyChallengesHeader span
+	{
+		float:right;
+	}
+		h3.dailyChallengesHeader span span:first-child
+		{
+			margin-right:10px;
+		}
+		h3.dailyChallengesHeader span span
+		{
+			float:none;
+			margin:0 0 0 5px;
+		}
+	
+ul.challengesList
+{
+	width:640px;
+	margin:0 auto;
+	overflow:hidden;
+}
+	ul.challengesList li
+	{
+		position:relative;
+		margin-bottom:16px;
+		background:url(https://halo.bungie.net/images/reachStatsNew/bg_10white.png);
+		width:100%;
+	}
+		ul.challengesList li.emptyState
+		{
+			padding:18px;
+		}
+		ul.challengesList li img
+		{
+			width:100px;
+			height:100px;
+			float:left;
+			margin:8px 28px 8px 18px;
+		}
+		ul.challengesList li div.info
+		{
+			float:left;
+			width:480px;
+			padding-top:16px;
+		}
+			ul.challengesList li div.info h5
+			{
+				float:left;
+				color:#f7f7f7;
+				font-size:14px;
+				font-weight:normal;
+				margin-bottom:12px;
+			}
+			ul.challengesList li div.info .rFloat p
+			{
+				display:inline;
+				font-size:14px;
+				color:#f7f7f7;	
+			}
+			ul.challengesList li div.info p.timeDisplay
+			{
+				font-size:14px;
+			}
+				ul.challengesList li div.info p.timeDisplay span
+				{
+					margin-right:5px;
+				}
+				ul.challengesList li div.info p.timeDisplay span.seconds
+				{
+					color:#ff5f3c;
+					margin-right:10px;
+				}
+			ul.challengesList li div.info p.description
+			{
+				font-style:italic;
+				font-size:11px;
+				color:#bebebe;
+				clear:both;
+			}
+			ul.challengesList li div.info div.reward{position:absolute;bottom:15px;width:480px;}
+			ul.challengesList li div.info p.success
+			{
+				font-size:18px;
+				color:#65c1e7;
+				text-transform:uppercase;
+				background:url(https://halo.bungie.net/images/reachStatsNew/icon_check.png) no-repeat left center;
+				padding-left:37px;
+				margin-bottom:0;
+			}
+			ul.challengesList li div.info div.barContainer
+			{
+				height:19px;
+				background:url(https://halo.bungie.net/images/reachStatsNew/bg_20white.png);
+				width:100%;
+				position:relative;
+			}
+				ul.challengesList li div.info div.barContainer div.bar
+				{
+					background:url("https://halo.bungie.net/images/reachStatsNew/bg_20white.png") repeat scroll 0 0 transparent;
+					height:19px;
+					position:relative;
+				}
+					ul.challengesList li div.info div.barContainer div.bar span
+					{
+						background:url("https://halo.bungie.net/images/reachStatsNew/rankBarProgressIndicator.png") no-repeat scroll 0 0 transparent;
+						height:23px;
+						position:absolute;
+						right:-3px;
+						top:-2px;
+						width:7px;
+					}
+				ul.challengesList li div.info div.barContainer p
+				{
+					font-size:11px;
+					line-height:19px;
+					text-align:right;
+					position:absolute;
+					top:0;
+					right:5px;
+				}
+	ul.dailyChallengesList{margin-bottom:-16px;}
+				
+/* prev/next buttons for files list */
+div.btns
+{
+	text-align:center;
+	clear:both;
+	width:640px;
+	position:relative;
+	top:0;
+	left:0;
+	height:40px;
+	margin:7px auto 12px;
+}
+	div.btns a,
+	div.btns div
+	{
+		background:url(https://halo.bungie.net/images/reachOnline/sprite_buttons.png) no-repeat;
+		width:313px;
+		height:40px;
+		text-indent:-99999px;
+		overflow:hidden;
+		display:block;
+		margin:0;
+		position:absolute;
+		top:0px;
+	}
+		div.btns a.previous
+		{
+			background-position:0 -200px;
+			left:0;
+		}
+			div.btns a.previous:hover
+			{
+				background-position:0 -240px;
+			}
+		div.btns a.next
+		{
+			background-position:0 -280px;
+			width:311px;
+			right:0;
+		}
+			div.btns a.next:hover
+			{
+				background-position:0 -320px;
+			}
+		div.btns div.disabledPrevious
+		{
+			background-position:0 -559px;
+			left:0;
+			cursor:default;
+		}
+		div.btns div.disabledNext
+		{
+			background-position:0 -599px;
+			width:311px;
+			right:0;
+			cursor:default;
+		}
+
+/* both heatmap pages */
+.Heatmaps div.mainGlowBox
+{
+	padding-bottom:14px;
+}
+.Heatmaps div.sort
+{
+	margin:0 auto 14px;
+	width:640px;
+}
+	.Heatmaps div.sort img
+	{
+		float:right;
+	}
+	.Heatmaps div.sort div.background
+	{
+		
+		padding-right:258px;
+		margin-bottom:12px;
+		min-height:116px;
+		position:relative;
+		padding-bottom:30px;
+		z-index:3;
+	}
+		.Heatmaps div.sort div.background ul.dropDown{width:162px;margin-right:17px;}
+		.Heatmaps div.sort div.background p
+		{
+			padding-right:10px;
+			width:372px;
+		}
+		.Heatmaps div.sort div.selectContainer
+		{
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:640px;
+			
+		}
+		.Heatmaps div.sort select
+		{
+			width:184px;
+			border:0;
+			margin-right:5px;
+			
+		}
+	.Heatmaps table.centerNav
+	{
+		clear:both;
+		margin:0;
+		width:100%;
+		table-layout:fixed;
+		
+	} 
+		.Heatmaps table.centerNav td a
+		{
+			text-transform:none;
+		}
+.Heatmaps div.heatmap
+{
+	width:638px;
+	margin:0 auto;
+	text-align:center;
+	background:#000;
+	float:none;
+}
+	.Heatmaps div.heatmap .content
+	{
+		float:none;
+		padding:22px 0;
+	}
+	.Heatmaps div.heatmap p.damageRadius
+	{
+		text-align:center;
+		color:#fff;
+		font-size:13px;
+		padding-top:0px;
+		margin-bottom:22px;
+	}
+		.Heatmaps div.heatmap p.damageRadius span{margin-left:15px;}
+		.Heatmaps div.heatmap p.damageRadius a
+		{
+			margin:0 5px;
+		}
+			.Heatmaps div.heatmap p.damageRadius a.on
+			{
+				color:#fff;
+			}
+
+/* pie graphs */
+div.bg_pieGraph{}
+	div.pieGraph,div.pieGraphContainer{opacity:0.55;}
+		#jsDisabled div.bg_pieGraph{display:none;}
+		div.bg_pieGraph img{position:absolute;}
+		div.bg_pieGraph ul.legend{position:absolute;}
+			div.bg_pieGraph ul.legend li{line-height:22px;height:26px;font-size:10px;color:#fff;}
+				div.bg_pieGraph ul.legend li.invasion,
+				div.bg_pieGraph ul.legend li.campaign{width:68px;}
+				div.bg_pieGraph ul.legend li.custom,
+				div.bg_pieGraph ul.legend li.arena{width:60px;}
+				div.bg_pieGraph ul.legend li.firefight,
+				div.bg_pieGraph ul.legend li.competitive{width:74px;}
+				div.bg_pieGraph ul.legend li span{display:inline-block;width:5px; height:5px;margin:7px;vertical-align:middle;margin:0 5px 0 2px;}
+					div.bg_pieGraph ul.legend li.campaign span{background:#8DBD3F;}
+					div.bg_pieGraph ul.legend li.firefight span{background:#b83a3a;}
+					div.bg_pieGraph ul.legend li.arena span{background:#0066A6;}
+					div.bg_pieGraph ul.legend li.invasion span{background:#B9E5FB;}
+					div.bg_pieGraph ul.legend li.competitive span{background:#00A9D3;}
+					div.bg_pieGraph ul.legend li.custom span{background:#624a95;}
+					div.bg_pieGraph ul.legend li.victory span{background:#27AAE1;}
+					div.bg_pieGraph ul.legend li.top50 span{background:#BE1E2D;}
+					div.bg_pieGraph ul.legend li.top33 span{background:#1C75BC;}
+					div.bg_pieGraph ul.legend li.defeat span{background:#D7DF23;}
+
+/* NotFoundControl */
+div.notFoundPanel
+{
+    width:873px;
+}
+    div.notFoundPanel h1
+    {
+        background:url("https://halo.bungie.net/images/reachStatsNew/bg_sideNav_h4.png") no-repeat scroll left bottom transparent;
+        height:40px;
+        margin:0 0 10px;
+    }
+    div.notFoundPanel h1 strong
+    {
+        background:url(https://halo.bungie.net/images/reachStatsNew/sprite_sideNav_h4.png) no-repeat 0 -90px;
+        display:block;
+        float:left;
+        height:15px;
+        margin:12px 0 0 16px;
+        overflow:hidden;
+        text-indent:-9999px;
+        width:100px;
+    }
+		div.notFoundPanel h1 span
+		{
+			background:url("https://halo.bungie.net/images/reachStatsNew/bg_gradientNav.png") no-repeat scroll 0 0 transparent;
+			display:block;
+			height:40px;
+			position:absolute;
+			right:-39px;
+			top:-1px;
+			width:40px;
+		}
+    div.notFoundPanel div.sideBar{width:204px;float:left;position:relative;z-index:2;} 
+        div.notFoundPanel div.sideBar h4{background:url(https://halo.bungie.net/images/reachStatsNew/sprite_sideNav_h4.png) no-repeat 16px -105px;height:15px;text-indent:-99999px;overflow:hidden;margin:16px 0;}
+        div.notFoundPanel div.sideBar div.glowBox{background:none;width:191px;}
+            div.notFoundPanel div.sideBar ul{padding:0 16px;width:159px;margin-bottom:-9px;}
+                div.notFoundPanel div.sideBar ul li{margin-bottom:25px;}
+                    div.notFoundPanel div.sideBar ul li a{font-size:13px;}
+                    div.notFoundPanel div.sideBar ul li p{font-size:11px;margin-bottom:0;color:#7b8185;line-height:13px;}
+    .mainContentContainer div.notFoundPanel h2{z-index:1;}
+    div.notFoundPanel div.recordNotLocated{background:url(https://halo.bungie.net/images/reachStatsNew/bg_recordNotLocated.png) no-repeat;position:absolute;bottom:0;left:-53px;width:545px;height:444px;}
+    div.notFoundPanel div.errorState{padding:0 16px;}
+        div.notFoundPanel div.errorState div.community_colA{float:right;width:283px;margin:0 0 100px 16px;}
+            div.notFoundPanel div.errorState div.community_colA .boxB{margin:0;}
+        div.notFoundPanel div.errorState p{font-size:13px;color:#e3e2e2;}
+
+/* file 4x3 */
+img.fourbythree {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #2A2A2A;
+	width: 180px !important;
+}
+
+ul.fileGridList li img.fourbythree {
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #222630;
+	width: 180px !important;
+}

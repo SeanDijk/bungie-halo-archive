@@ -1,0 +1,528 @@
+﻿/* Stylesheet: This one defines structural images we use, as well as a few other things */
+
+h2.section_title_brandnav {
+	/*background-image: url(/images/base_struct_images/section_title_brandnav.gif);*/
+}
+
+/* slot images for empty fileshare slots */
+.fs_empty_slot_1 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/1.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_2 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/2.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_3 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/3.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_4 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/4.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_5 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/5.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_6 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/6.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_7 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/7.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_8 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/8.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_9 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/9.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_10 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/10.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_11 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/11.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_12 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/12.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_13 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/13.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_14 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/14.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_15 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/15.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_16 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/16.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_17 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/17.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_18 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/18.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_19 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/19.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_20 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/20.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_21 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/21.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_22 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/22.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_23 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/23.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.fs_empty_slot_24 {
+	background-image: url(https://halo.bungie.net/images/halo3stats/fileshareiconssm/slots/24.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/* other image classes*/
+.rolloverbuttonimg
+{
+	background-repeat:no-repeat;height:20px;width:67px;
+	margin:0 0 0 5px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/btn_search.gif);
+	  vertical-align:middle;
+}
+.rolloverbuttonimgOver
+{
+	background-repeat:no-repeat;height:20px;width:67px;
+	margin:0 0 0 5px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/btn_search.gif);
+	 background-position: 0 -20px;
+	  vertical-align:middle;
+}
+
+/* other image classes*/
+.searchbutton
+{
+	background-repeat:no-repeat;height:20px;width:24px;
+	margin:0 0 0 -5px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/search/searchbutton.gif);
+	  vertical-align:middle;
+	
+}
+.searchbuttonOver
+{
+	background-repeat:no-repeat;height:20px;width:24px;
+	margin:0 0 0 -5px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/search/searchbutton.gif);
+	 background-position: 0 -20px;
+	 vertical-align:middle;
+	
+}
+
+.submit-button{background-repeat:no-repeat;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_submit2.gif);}
+.submit-button:hover{background-repeat:no-repeat;background-position: 0 -20px;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_submit2.gif);}
+.addtag-button{background-repeat:no-repeat;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_submit2.gif);}
+.addtag-button:hover{background-repeat:no-repeat;background-position: 0 -20px;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_submit2.gif);}
+.report-button{background-repeat:no-repeat;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_report.gif);}
+.report-button:hover{background-repeat:no-repeat;background-position: 0 -20px;height:20px;width:67px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_report.gif);}
+.rate-button{background-repeat:no-repeat;height:20px;width:48px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_rate.gif);}
+.rate-button:hover{background-repeat:no-repeat;background-position: 0 -20px;height:20px;width:48px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_rate.gif);}
+.render-purchase-button {background-repeat:no-repeat;height:24px;width:134px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/redeemminutes.gif);}
+.render-purchase-button:hover {background-position: 0 -24px; }
+.render-moretokens-button {padding-right: 12px; float: right; background-repeat:no-repeat;height:24px;width:147px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_moretokens.gif);}
+.render-moretokens-button:hover {background-position: 0 -24px; }
+.render-nevermind-button {background-repeat:no-repeat;height:24px;width:68px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_cancel.gif);}
+.render-nevermind-button:hover {background-position: 0 -24px; }
+.render-back-button { background-repeat:no-repeat;height:24px;width:50px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_edit.gif);}
+.render-back-button:hover { background-position: 0 -24px; }
+.render-estimate-button {background-repeat:no-repeat;height:24px;width:87px;background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/btn_next.gif);}
+.render-estimate-button:hover {background-position: 0 -24px; }
+
+a.trophyimg
+{
+	background-repeat:no-repeat;height:22px;width:22px;
+	 background-image: url(https://halo.bungie.net/images/halo3stats/fileshareicons/screenshots/trophy.gif);
+	  display:block;float:left;margin-top:1px;
+	  vertical-align:middle; 
+}
+a.trophyimg:hover
+{
+	background-repeat:no-repeat;height:22px;width:22px;
+	 background-image: url(https://halo.bungie.net/images/halo3stats/fileshareicons/screenshots/trophy.gif);
+	 background-position: 0 -22px;margin-top:1px;
+	  display:block;float:left;
+	  vertical-align:middle;
+}
+
+a.trophyimgSel
+{
+	background-repeat:no-repeat;height:22px;width:22px;
+	 background-image: url(https://halo.bungie.net/images/halo3stats/fileshareicons/screenshots/trophy.gif);
+	 background-position: 0 -44px;margin-top:1px;
+	  display:block;float:left;
+	  vertical-align:middle;
+}
+
+.previmg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/leftarrow.gif);
+	  
+	  display:block;
+	  vertical-align:middle;
+	  margin: 6px  0 0 5px; float: left; 
+}
+.previmgOver
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/leftarrow.gif);
+	margin: 6px  0 0 5px; float: left; 
+	 background-position: 0 -20px;
+	  display:block;
+	  vertical-align:middle;
+}
+
+.nextimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/rightarrow.gif);
+	  
+	  margin: 6px 5px 0 0; float: right; 
+	  display:block;
+	  vertical-align:middle;
+}
+.nextimgOver
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/rightarrow.gif);
+	background-position: 0 -20px;
+	margin: 6px 5px 0 0;float: right; 
+	  display:block;
+	  vertical-align:middle;
+}
+
+.nextendimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/nextnext.gif);
+	  display:block;
+	  vertical-align:middle;
+}
+.nextendimgOver
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/nextnext.gif);
+	 background-position: 0 -20px;
+	  display:block;
+	  vertical-align:middle;
+}
+
+.prevendimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/prevprev.gif);
+	  display:block;
+	  vertical-align:middle;
+}
+
+
+.prevendimgOver
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/prevprev.gif);
+	 background-position: 0 -20px;
+	  display:block;
+	  vertical-align:middle;
+}
+
+.moreimg
+{
+	background-repeat:no-repeat;height:13px;width:11px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/arrow_4.gif);
+	  
+	  vertical-align:middle;
+}
+
+
+.lessimg
+{
+	background-repeat:no-repeat;height:13px;width:11px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/arrow_4.gif);
+	 
+	  
+	  vertical-align:middle;
+}
+
+.nextoffimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/rightarrow.gif);
+	  background-position: 0 -40px;
+	  display:block;
+	  vertical-align:middle;
+	  margin: 6px 5px 0 0; float: right; 
+}
+
+.prevoffimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/leftarrow.gif);
+	   background-position: 0 -40px;
+	  display:block;
+	  vertical-align:middle;
+	  margin: 6px  0 0 5px; float: left; 
+}
+
+.nextendoffimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/nextnext.gif);
+	  background-position: 0 -40px;
+	  display:block;
+	  vertical-align:middle;
+}
+
+.prevendoffimg
+{
+	background-repeat:no-repeat;height:20px;width:21px;
+	 background-image: url(https://halo.bungie.net/images/base_struct_images/linkBt/prevprev.gif);
+	  background-position: 0 -40px;
+	  display:block;
+	  vertical-align:middle;
+}
+
+a.h2SectionHdr
+{
+	background-repeat:no-repeat;height:50px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo2header.jpg);
+	 display:block;
+	
+	  
+}
+a.h2SectionHdrOver
+{
+	background-repeat:no-repeat;height:50px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo2header.jpg);
+	 background-position: 0 -50px;
+	 display:block;
+	  
+}
+
+a.h3SectionHdr
+{
+	background-repeat:no-repeat;height:50px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo3header.jpg);
+	 display:block;
+	
+	  
+}
+a.h3SectionHdrOver
+{
+	background-repeat:no-repeat;height:50px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo3header.jpg);
+	 background-position: 0 -50px;
+	 display:block;
+	  
+}
+
+a.h2SectionBanner
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo2banner.jpg);
+	 display:block;
+	
+	  
+}
+a.h2SectionBannerOver
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo2banner.jpg);
+	 background-position: 0 -253px;
+	 display:block;
+	  
+}
+
+a.h3MultiPlayerBanner
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo3stats/stat_halo3banner.jpg);
+	 display:block;
+	
+	  
+}
+a.h3MultiPlayerBannerOver
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo3stats/stat_halo3banner.jpg);
+	 background-position: 0 -253px;
+	 display:block;
+	  
+}
+
+a.h3SectionBanner
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo3banner.jpg);
+	 display:block;
+	
+	  
+}
+a.h3SectionBannerOver
+{
+	background-repeat:no-repeat;height:253px;width:322px;
+	 background-image: url(https://halo.bungie.net/images/halo2stats/stat_halo3banner.jpg);
+	 background-position: 0 -253px;
+	 display:block;
+	  
+}
+
+img.external_link_arrow {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/arrow_4.gif);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 13px;
+	vertical-align: text-bottom;
+}
+
+.top_logo_bungie {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/logo_bungie_01.gif);
+	height: 82px;
+	width: 190px;
+	display: block;
+	
+}
+
+.ind_light
+{
+	background-image: url(https://halo.bungie.net/images/base_struct_images/page_indicator_light.jpg);
+	height: 20px;
+	width: 8px;
+	padding:0;
+}
+
+.ind_dark
+{
+	background-image: url(https://halo.bungie.net/images/base_struct_images/page_indicator_dark.jpg);
+	height: 20px;
+	width: 8px;
+	padding:0;
+}
+
+/* popup images */
+.button_popup_close {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/btn_close.gif);
+	height: 18px;
+	width: 36px;
+	display: block;
+	cursor: hand;
+}
+
+.button_popup_next { 
+	background-image: url(https://halo.bungie.net/images/base_struct_images/btn_next.gif);
+	height: 18px;
+	width: 75px;
+	display: block;
+	cursor: hand;
+}
+
+.button_popup_previous {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/btn_previous.gif);
+	height: 18px;
+	width: 75px;
+	display: block;
+	cursor: hand;
+}
+
+/* account creation */
+.passport_consent_page_button {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/arrow_2.gif);
+	margin-left: 24px;
+	padding-left: 15px;
+	background-repeat: no-repeat;
+}
+
+.account_creation_form_button {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/arrow_2.gif);
+	padding-left: 15px;
+	background-repeat: no-repeat;
+}
+
+.passportSignupConsent {
+	background-image: url(https://halo.bungie.net/images/base_struct_images/signup/consent.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 438px;
+	height: 23px;
+	display: block;
+}
+
+.passportSignupConsent:hover {
+	background-position: left bottom;
+}
+

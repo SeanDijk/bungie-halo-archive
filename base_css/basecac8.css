@@ -1,0 +1,1684 @@
+﻿@font-face {
+    font-family: 'CabinRegular';
+    src: url('https://halo.bungie.net/fonts/Cabin-Regular-webfont.eot');
+    src: url('https://halo.bungie.net/fonts/Cabin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://halo.bungie.net/fonts/Cabin-Regular-webfont.woff') format('woff'),
+         url('https://halo.bungie.net/fonts/Cabin-Regular-webfont.ttf') format('truetype'),
+         url('https://halo.bungie.net/fonts/Cabin-Regular-webfont.svg#CabinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html
+{
+    height:100%;
+    background:url(https://halo.bungie.net/images/dark/ohmygodiseestars.gif) fixed;
+    background:url(https://halo.bungie.net/images/base_struct_images/top_nav/bg_nav_total.jpg) repeat-x 0 0, url(https://halo.bungie.net/images/dark/ohmygodiseestars.gif) fixed;
+}
+
+body { height:100%;margin:0; background: #000; font: 12px/15px Arial, Helvetica, sans-serif; color: #bbb; background:url(https://halo.bungie.net/images/dark/upper_neb.png) no-repeat center top fixed;}
+body > div:first-child
+{
+    height:100%;
+    background:url(https://halo.bungie.net/images/dark/lower_neb.png) no-repeat center bottom fixed;
+}
+body.popup { background: #000; margin:0; font: 12px/15px Arial, Helvetica, sans-serif; color: #bbb; width: 680px; overflow-x:hidden; }
+
+a {font: 12px Arial, Helvetica, sans-serif; color: #71caef; line-height /*\**/:inherit\9; outline-style:none;}
+a:link { color: #71caef; text-decoration: none;outline-style: none; }
+a:visited { color: #71caef; text-decoration: none; outline-style: none; }
+a:hover { color: #fff; text-decoration: underline; }
+a:active { color: #71caef; outline-style: none;}
+
+dl,dt,dd{margin:0;padding:0;}
+
+div { margin: 0; padding: 0; }
+div h1 { font: bold 14px/20px Arial, Helvetica, sans-serif; color: #fefefe; margin: 0; padding: 0; }
+div h2 { font: 14px/20px Arial, Helvetica, sans-serif; color: #fefefe; text-transform: uppercase; margin: 0; padding: 0; }
+div h3 { font: 14px/14px Arial, Helvetica, sans-serif; color: #fefefe; margin: 1em 0 1em 0; padding: 0; text-transform: uppercase;}
+div h4 { font: 14px/15px Arial, Helvetica, sans-serif; color: #fefefe; margin: 1em 0 1em 0; padding: 0; width: 100%;}
+div h5 { font: bold 12px/15px Arial, Helvetica, sans-serif; color: #fefefe; margin: 0; padding: 0; }
+div h6 { font: 12px/15px Arial, Helvetica, sans-serif; color: #bbb; margin: 0 0 .5em 0; padding: 0; }
+div p  {font: 12px/18px Arial, Helvetica, sans-serif; color:#bbb; margin: 0 0 1em 0; padding: 0; }
+div p strong {font:bold 13px/18px Arial, Helvetica, sans-serif; color:#eee; }
+div blockquote { padding: 0 0 0 20px; margin:0; line-height: 18px;}
+div blockquote.quote { text-indent: -8px;}
+div form { margin: 0; padding: 0; }
+div ul { margin:0; padding: 0; }
+div li { margin:0; padding: 0; }
+div ol { margin: 0; padding: 0; list-style: none;}
+div img { border: 0px solid #000; } 
+div hr { display:block; border:0; border-top: 1px solid #5b5b5b; height: 0; margin: .5em 0 .5em 0; padding: 0; clear:both}
+hr { display:block; border:0; border-top: 1px solid #5b5b5b; height: 0; margin: .5em 0 .5em 0; padding: 0; clear:both}
+sup { vertical-align: baseline; font-size: 89%; position: relative; top: -.4em; } 
+sub { vertical-align: baseline; font-size: 89%; position: relative; top: +.20em; }
+
+/* Utility Classes */
+div img.left { float:left; margin: 3px 10px 5px 0;}
+div img.right { float:left; margin: 3px 0 5px 10px;}
+div p.indent { text-indent: 0; }
+div p.gap { margin-bottom: 30px }
+div p.compact { margin: 0; padding: 0; }
+div p a.more { display:block; margin: 2px 0 0 0;}
+div a.arrowPre:before { content:"\00BB \00A0" }
+div a.arrowPost:after { content:"\00A0 \00BB" }
+div a.def:link { color: #71caef; text-decoration: none; border-bottom: 1px dashed #71caef; }
+div a.def:visited { color: #71caef; text-decoration: none; border-bottom: 1px dashed #71caef; }
+div a.def:hover { color: #004061; text-decoration: none; border-bottom: 1px dashed #004061; }
+div a.def:active { color: #71caef; }
+li a.guest {color: #aaaaaa; cursor: default;}
+li a.guest:hover {text-decoration: none;} 
+div ul.icons { list-style-type: none; padding: 2px 0 0 0; margin:0}
+div ul.icons li { padding: 2px 0 2px 0; margin: 0}
+div ul.icons li img { vertical-align: middle; display: inline; margin: 0 .5em 0 0}
+div ul.compact { list-style-type: none; padding: 0; margin:0}
+div ul.compact li { padding: 0; margin: 0}
+div ul.arrow { list-style: url(https://halo.bungie.net/images/arrow.gif); }
+div table.gap { margin-bottom: 30px }
+div hr.thick { border-top: 2px solid #ccc; margin: 21px 0 7px 0;}
+.rightAlign{text-align: right;}
+.inLine{display:inline;}
+.rFloat{float:right;}
+.lFloat{float:left;}
+.textInput { color: #333; border: 1px solid #666; padding: 2px; margin: 0 0 2px 0; width: 200px; background: #d3d3d3; }
+.noback { background: none !important; }
+.restrict_text {overflow:hidden;}
+.hide { visibility:hidden; }
+.clear { visibility: visible !important; height: 0 !important; clear: both; margin-bottom: 0 !important; font-size:0; line-height:0;}
+br.clear { clear:both; height: 0 !important; margin: 0 !important; padding: 0; }
+div.clear { clear: both; }
+.clear {clear: both; }
+.bold { font-weight: bold; }
+.larger { font-size: 12px;}
+.largest { font-size: 15px; }
+.label_container { height: 25px; overflow: hidden; }
+.label { margin: 5px 0 5px 10px; font-size: 14px}
+.left_image { padding: 5px 0px 0 0; float: left; }
+.right_image { padding: 0px 5px 0 0; float: right; }
+.left_list { margin: 0; padding: 0; float: left; list-style: none; }
+.left_list li {  padding: 0 0 2px 0; }
+.font_white { color: #ffffff;}
+.font_orange { color: #f26122;}
+.font_red{color:#f00;}
+.previous { float: left;  margin-top: 3px;}
+.next { float: right; margin-top: 3px;}
+.jumpAnchor{/*position:absolute;top:0;left:0;*/}
+div.alert { padding: 10px; margin-bottom: 10px; background: #ddd; border-left: 10px solid #f99c20; }
+div.alert p { color: #900; }
+div.alert p.success { color: #488100; }
+span.requiredfield { color: #cc0000; font-style: italic; font-weight: bold; } 
+span.validatormsg { color: #cc0000; font-weight: bold; }
+span.banneduserlabel { color: #cc0000; font-style: italic; }
+
+.wrap { word-wrap: break-word; }
+.long_text {width: 385px; overflow: hidden; word-wrap: break-word;}
+
+/* structural elements */
+div.main { width: 100%;  height: auto;}
+	div.bgRepeat {  width: 100%; margin: 0 auto; clear:both;}
+		div.sContent-head { width: 100%; float: left; background: #000 url(https://halo.bungie.net/images/base_struct_images/top_nav/bg_nav.jpg) repeat-x 0 33px; height:98px; position:relative; z-index:11;border-bottom:9px solid #000;}
+		     div.navWrapper{border-bottom:1px solid #1a1a1a;height:98px;}
+		div.sContent {  width: 902px; margin: 0 auto; padding:0;}
+			div.cols { width: 902px; padding:0; margin:0; }
+				div.col { float:left; padding:0; margin:0; overflow:hidden; }
+				div.colLast { float:left; padding:0;margin:0;overflow:hidden; }
+				div.bgRepeatAdmin div.colLast { background: url(https://halo.bungie.net/images/base_struct_images/bg_repeat2.png) repeat-y center center; overflow:hidden; height: auto; }
+div.popup { width: 770px; margin: 0 auto; }
+div.bgRepeatAdmin { background: url(https://halo.bungie.net/images/base_struct_images/bg_repeat2.png) repeat-y center center; overflow:hidden; }
+div.sContentpopup {width: 100%; float: left; background: #000 url(https://halo.bungie.net/images/base_struct_images/themes/default/brandnav_bg1px2.jpg) repeat-x;}
+
+/* forms */
+fieldset{border:0;padding:0;margin:0;}
+fieldset ul{list-style:none;}
+fieldset .radioList input{margin:0 5px 0 0;vertical-align:text-top;}
+
+a.bluebutton { display: block; height: 24px; width: 100px; background: transparent url(https://halo.bungie.net/images/base_struct_images/bluebutton-left.gif) no-repeat left top; padding-left: 10px; line-height: 24px;}
+	a.bluebutton span { display: block; height: 24px; width: auto; background: transparent url(https://halo.bungie.net/images/base_struct_images/bluebutton-right.gif) no-repeat right top; padding-right: 20px;cursor:pointer; }
+	a.bluebutton:hover { text-decoration: none; color:#71caef; background-position: left bottom; }
+	a.bluebutton:hover span { background-position: right bottom; }
+.button { color: #A3A3A4; border: 1px solid #5c5d5f; padding: 1px; margin: 0 0 2px 0; background:#1b1d1f;cursor:pointer; }
+	.button:hover { background: #17668a; border-color: #56aacd; color: #dce8ee; } 
+
+div.formgroup1 { padding: 10px; margin-bottom: 10px; background: #161617; border: 1px solid #414547; border-left: 10px solid #203660;}
+	div.formgroup1 p { margin-bottom: 7px; }
+	div.list-c div.formgroup1 { width: auto; }
+div.formgroup2 { padding: 10px; margin-bottom: 10px; background: #161617; border: 1px solid #414547; border-left: 10px solid #203660; }
+	div.formgroup2 p { margin-bottom: 7px; }
+	div.formgroup2 table { font-weight: bold; color: #f2f2f2; margin: 0; padding: 0; }
+	div.list-c div.formgroup2 { width: auto; }
+div.formgroup3 { padding: 10px; margin-bottom: 10px; background: #161617; border: 1px solid #414547; border-left: 10px solid #203660; display: inline-block; width:auto;}
+	div.formgroup3 .create-post-actions ul { margin: 0; padding: 5px 0 0 0; }
+	div.block-a div.list-c div.formgroup3 { width: auto; clear: both; }
+div.forum_main_col div.block-a div.list-c div.formgroup1, div.forum_main_col div.block-a div.formgroup3, div.forum_main_col div.block-a div.formgroup2 { width: 530px !important; }
+
+div ul.arrow1 { list-style-type: none; margin: 0 0 2px 0; padding: 0;}
+	div ul.arrow1 li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_1.gif) no-repeat; text-align: left; margin: 0 0 1px 0; }
+	div ul.arrow1 li.not-a { padding: 0 0 0 13px }
+	div ul.arrow1 li a { color: #71caef;  font-weight: bold;  padding: 0 0 0 13px; }
+div ul.arrow2 { list-style-type: none; margin: 0; padding: 0; float: left; width: 100%; margin-bottom: 10px; clear: both;}
+	div ul.arrow2 li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_2.gif) no-repeat; text-align: left; margin: 0 0 1px 0; float: left;width: 100%;}
+	div.list-c ul.arrow2 li { background-position: top left;}
+	div ul.arrow2 li a { color: #71caef; padding: 0 0 0 13px;}
+	div ul.arrow2 li .not-a { padding: 0 0 0 13px;}
+div ul.arrow3 { list-style-type: none; margin: 0; padding: 0;}
+	div ul.arrow3 li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_3.gif) no-repeat; text-align: left; margin: 0 0 1px 0; }
+	div ul.arrow3 li a { color: #71caef; padding: 0 0 0 13px; }
+div ul.buttons { list-style-type: none; margin: 0 0 0 10px; padding: 0;}
+	div ul.buttons li {height:18px; width:262px; margin:0px 0 0px 0;}
+	div ul.buttons li a span {background: url(https://halo.bungie.net/images/base_struct_images/arrow_3.gif) no-repeat; font-size:12px; padding: 0 0 0 20px;}
+	div ul.buttons li a { color: #71caef; height:13px; width:242px; display:block; padding:5px 0 0 10px;   }
+div ul.arrow4 { list-style-type: none; margin: 0; padding: 0;}
+	div ul.arrow4 li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_4.gif) no-repeat; text-align: left; margin: 3px 0 1px 0; }
+	div ul.arrow4 li a { color: #71caef; padding: 0 0 0 13px; }
+div ul.arrow5 { list-style-type: none; margin: 0; padding: 0;}
+	div ul.arrow5 li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_5.gif) no-repeat; text-align: left; margin: 0 0 1px 0; }
+	div ul.arrow5 li a { color: #71caef; padding: 0 0 0 13px; }
+div ul.more { list-style-type: none; margin: 0 0 1px 0; padding: 5px 5px 4px 5px; background-color:#203660; }
+	div ul.more li { background: url(https://halo.bungie.net/images/base_struct_images/more.gif) no-repeat; text-align: left; margin: 0 0 0 0; }
+	div ul.more li a { color: #71caef; font-weight: bold; text-decoration: none; padding: 0 0 0 13px; }
+	div ul.more li a:hover { color: #fff; text-decoration: none;}
+div ul.less { list-style-type: none; margin: 0; padding: 5px 5px 4px 5px; background-color:#002233; }
+	div ul.less li { background: url(https://halo.bungie.net/images/base_struct_images/less.gif) no-repeat; font-weight: bold; color: #fff; text-align: left; margin: 0 0 0 0; }
+	div ul.less li a { color: #71caef; font-weight: bold; text-decoration: none; padding: 0 0 0 13px; }
+	div ul.less li a:hover { color: #fff; text-decoration: none;}
+div ul.ticker { list-style-type: none; margin: 0; padding: 5px 5px 4px 5px; background-color:#d84a0a; }
+	div ul.ticker li { font-weight: bold; color: #fff; text-align: left; margin: 0 0 0 0; padding: 0 0 0 10px; }
+div p a.arrow3 { display:block; background: url(https://halo.bungie.net/images/base_struct_images/arrow_3.gif) no-repeat; text-align: left; margin: .5em 0 0 0; padding: 0 0 0 11px; text-decoration: none; }
+	div p a.arrow3:hover { color: #fff; text-decoration: underline; }
+div ul.next { list-style-type: none; margin: 0; padding: 5px 5px 2px 5px; }
+	div ul.next li { text-align: right;}
+div ul.arrowrss { list-style-type: none; margin: 0; padding: 0;}
+	div ul.arrowrss li { background: url(https://halo.bungie.net/images/base_struct_images/arrow_rss.gif) no-repeat; text-align: left; margin: 0 0 1px 0; }
+	div ul.arrowrss li a {  color: #71caef; text-decoration: none; padding: 0 0 0 13px; }
+	div ul.arrowrss li a:hover { color: #fff; text-decoration: underline; }
+a.disabledLink {font: 14px/14px Arial, Helvetica, sans-serif; color: #999; text-decoration: none; }
+	a.disabledLink:hover { color: #999; text-decoration: none; }
+/* blue arrow link */
+a.linkArrow
+{
+	background:url("https://halo.bungie.net/images/reachStatsNew/bg_linkArrow.png") no-repeat scroll right center transparent;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	height:42px;
+	line-height:42px;
+	padding-right:20px;
+	text-transform:none;
+}
+	a.linkArrow:hover
+	{
+		background:url("https://halo.bungie.net/images/reachStatsNew/bg_linkArrow_on.png") no-repeat scroll right center transparent;
+	}
+	
+a.linkArrow_reverse
+{
+	background:url("https://halo.bungie.net/images/reachStatsNew/bg_linkArrowReverse.png") no-repeat scroll left center transparent;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	height:42px;
+	line-height:42px;
+	padding-left:20px;
+	text-transform:none;
+}
+	a.linkArrow_reverse:hover
+	{
+		background:url("https://halo.bungie.net/images/reachStatsNew/bg_linkArrowReverse_on.png") no-repeat scroll left center transparent;
+	}
+
+
+/* carousel used in home, halo 3, reach */
+a.rotateleft { display: block; width: 56px; height: 93px; background: black url(https://halo.bungie.net/images/base_struct_images/news/carousel-left.gif) no-repeat top left; }
+a.rotateright { display: block; width: 56px; height: 93px; background: black url(https://halo.bungie.net/images/base_struct_images/news/carousel-right.gif) no-repeat top left; }
+a.rotateleft:hover, a.rotateright:hover { background-position: bottom left; cursor: pointer; }
+div.carousel { float: left; width: 790px; height: 123px; list-style: none;overflow: hidden; display: block; }
+div.carousel ul li.rrItem { margin: 0 0 0 30px; }
+div.carousel a { width: 100%; text-align: center; display: block; line-height: 40px; }
+div.carousel a.adblock { width: 160px; height: 90px; display: block; background-position: top left; }
+div.carousel a.adblock:hover { background-position: bottom left; }
+div.carousel a.rrButton { display: none; }
+
+/* footer */
+
+div.footer { margin: 0;padding:14px 0 28px;border-top:1px solid #2a2a2a;} 
+div.footer p { font:Cabin,Arial, Sans-serif;font-size: 12px; color: #fff;text-transform:none;line-height:29px;padding-left:12px;margin-bottom:0;}
+div.footer ul.menu { float:right;padding-right:10px;}
+div.footer ul.menu li { float:left; border-left:1px solid #404040;padding:0 5px;height:11px;position:relative;list-style:none;margin-top:10px;}
+	div.footer ul.menu li:first-child{border-left:0;}
+	div.footer ul.menu li a{display:block;font-size:12px;position:relative;top:-3px;}
+div.fContent { width: 902px; margin: 0 auto; padding:0;} 
+
+
+
+
+div.passport_footer div.fl { background-color: #2E3032; background-image: none; } 
+div.passport_footer div.fr { background-color: #2E3032; background-image: none; }
+div.fContent_cont_passport div.footer { margin: 0;  width: 892px; float: left; background: black;}
+
+div.footer-menu .footer-esrb {margin:79px 0 0 13px;height:72px; float:left;}
+
+
+
+
+div.nav {  width: 873px; margin: 0 auto; position:relative;}
+	div.nav div.pagetop
+	{
+		width:100%;	
+		height:33px;
+	}
+		div.nav div.pagetop p
+		{
+			color:#fff;
+			float:left;
+			line-height:31px;
+			margin-bottom:0;
+		}
+			div.nav div.pagetop p em
+			{
+				color:#7e7e7e;
+				font-size:11px;
+				font-style:normal;
+			}
+			div.nav div.pagetop p a
+			{
+				font-size:11px;
+				line-height:31px;
+			}
+	div.pagetop div.search{float:right;height:31px;line-height:31px;width:50%;}
+		
+		div.pagetop div.search fieldset
+		{
+            border:0;
+            margin:0;
+            padding:0;
+            z-index:2;
+            position:relative;
+            width:auto;
+            float:right;
+		}
+			div.pagetop div.search fieldset label
+			{
+				color:#7e7e7e;
+				float:left;
+				margin-right:10px;
+				line-height:31px;
+			}
+			div.pagetop div.search fieldset input.text
+			{
+                background:none repeat scroll 0 0 #fff;
+				border:0 none;
+				height:13px;
+				padding-right:10px;
+				padding-left:3px;
+				width:132px;
+				z-index:1;
+				color:#000;
+				float:left;
+				margin-top:8px;
+				font-size:11px;
+			}
+			div.pagetop div.search fieldset input.submit
+			{
+                background:url("https://halo.bungie.net/images/base_struct_images/top_nav/btn_search.gif") no-repeat scroll left top transparent;
+				border:0 none;
+				cursor:pointer;
+				height:16px;
+				padding:0;
+				width:20px;
+				z-index:2;
+				font-size:0px;
+				line-height:0;
+				overflow:hidden;
+				float:left;
+				margin-top:8px;
+			}
+				div.pagetop div.search fieldset input.submit:hover{background-position:left bottom;}
+		
+		
+		div.pagetop div.search ul.dropDown
+		{
+        	position:relative;
+        	background:url("https://halo.bungie.net/images/base_struct_images/search/bg_searchDrop.jpg") repeat-x;
+        	width:51px;
+        	z-index:2;
+        	float:left;
+        	padding:0;
+        	margin:7px 0 0 0;
+		}
+			div.pagetop div.search ul.dropDown li
+			{
+            	background:none;
+            	margin-bottom:0;
+            	width:auto;
+            	padding:0;
+            	float:left;
+			}
+				div.pagetop div.search ul.dropDown li ul
+				{
+            		display:none;
+            		position:absolute;
+                	background:#000;
+                	border:#183757 1px solid;
+            		width:182px;
+            		top:30px;
+            		left:0;
+            		padding:5px;
+            		-moz-border-radius:0;
+            		-webkit-border-radius:0;
+				}
+					div.pagetop div.search ul.dropDown li ul li{width:100%;float:none;}
+						div.pagetop div.search ul.dropDown li ul a
+						{
+                    		padding:0px;
+                    		line-height:32px;
+                    		height:32px;
+                    		float:none;
+                    		white-space:nowrap;
+                    		padding-left:34px;
+                    		display:block;
+						}
+							div.pagetop div.search ul.dropDown li ul li.reach a{background:url(https://halo.bungie.net/images/base_struct_images/search/reach.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.halo3 a{background:url(https://halo.bungie.net/images/base_struct_images/search/halo3.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.users a{background:url(https://halo.bungie.net/images/base_struct_images/search/bungienetuser.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.halo2 a{background:url(https://halo.bungie.net/images/base_struct_images/search/halo2.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.files a{background:url(https://halo.bungie.net/images/base_struct_images/search/files.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.forums a{background:url(https://halo.bungie.net/images/base_struct_images/search/forums.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.groups a{background:url(https://halo.bungie.net/images/base_struct_images/search/groups.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul li.news a{background:url(https://halo.bungie.net/images/base_struct_images/search/news.gif) no-repeat 7px 6px;}
+							div.pagetop div.search ul.dropDown li ul a:hover{text-decoration:none;}
+						div.pagetop div.search ul.dropDown li ul li:hover{background:#333;}
+				div.pagetop div.search ul.dropDown li p
+				{
+            		margin-bottom:0;
+            		padding-right:22px;
+            		height:18px;
+            		width:25px;
+            		cursor:pointer;
+            		float:left;
+            		/*default selection*/
+					background-image:url(https://halo.bungie.net/images/base_struct_images/search/reach.gif);
+					background-repeat: no-repeat;
+					background-position: 7px 0px;
+				}
+					div.pagetop div.search ul.dropDown li p span
+					{
+                		height:7px;
+						position:absolute;
+						right:9px;
+						top:4px;
+						width:8px;
+                		background:url("https://halo.bungie.net/images/base_struct_images/top_nav/sprite_mainNavIcons.png") no-repeat scroll 0 0 transparent;
+					}
+						div.pagetop div.search ul.dropDown li:hover p span{background-position:0 -8px;}				
+				
+			
+			
+			
+			
+	
+	.nav .top_logo_bungie
+	{
+		position:absolute;
+		width:113px;
+		text-indent:-9999px;
+		overflow:hidden;
+		height:33px;
+		top:47px;
+		left:0;
+		background:url(https://halo.bungie.net/images/base_struct_images/top_nav/logo_bungie.png) no-repeat 0 0;
+	}
+	.mainNav{float:right;width:auto;}
+		.mainNav li
+		{
+    		float:left;
+    		width:auto;
+    		list-style:none;
+    		position:relative;
+		}
+			.mainNav li a
+			{
+        		display:block;
+        		float:left;
+        		width:auto;
+        		padding:0 24px 0 5px;
+        		height:68px;
+        		line-height:68px;
+        		position:relative;
+			}
+			    .mainNav > li > a
+			    {
+			        margin:0 2px;
+			    }
+				.mainNav > li:hover > a,
+				.mainNav > li.on > a
+				{
+        		   background:#000;
+        		   text-decoration:none;
+        		   border-left:2px solid #1e1919;
+        		   border-right:2px solid #0d0d0d;
+        		   margin:0;	            	
+				}
+				.mainNav li a em
+				{
+					display:block;
+					text-indent:-9999px;
+					background:url(https://halo.bungie.net/images/base_struct_images/top_nav/sprite_topNavHeadings.png) no-repeat;
+					height:14px;
+					overflow:hidden;
+					margin-top:27px;
+					margin-left:8px;
+					float:left;
+				}
+					.mainNav li a.Projects em
+					{
+						background-position:0 -17px;
+						width:52px;
+						height:14px;
+					}
+					.mainNav li a.Stats em
+					{
+						background-position:0 -31px;
+						width:48px;
+						height:14px;
+					}
+					.mainNav li a.About em
+					{
+						background-position:0 0;
+						width:72px;
+						height:17px;
+					}
+					.mainNav li a.Community em
+					{
+						background-position:0 -45px;
+						width:89px;
+						height:17px;
+					}
+					.mainNav li a.Account em
+					{
+						background-position:0 -62px;
+						width:59px;
+						height:13px;
+					}
+					
+				.mainNav li a span
+				{
+            		display:block;
+            		width:8px;
+            		height:7px;
+            		position:absolute;
+            		right:11px;
+            		top:31px;
+					background:url(https://halo.bungie.net/images/base_struct_images/top_nav/sprite_mainNavIcons.png) no-repeat 0 0;
+				}
+					.mainNav li a:hover span,
+					.mainNav li a.on span{background-position:0 -8px;}
+			.mainNav li ul.flyOut
+			{
+        		position:absolute;
+        		left:-99999px;
+        		top:65px;
+        		border:2px solid #1e1919;
+        		border-top:0;
+        		border-bottom:0;
+        		background:#000;
+        		z-index:100;
+			}
+				
+					.mainNav li ul.flyOut li
+					{
+						display:block;
+						float:none;
+						
+						width:auto;
+						clear:both;
+						/*overflow:hidden; */
+						position:relative;  	
+					}
+						.mainNav li ul.flyOut li h4{line-height:34px;width:auto;margin:0;border-bottom:2px solid #1e1919;padding:1px 0;}
+							.mainNav li ul.flyOut li h4:hover{background:#0e0e0e;padding:0;}
+							.mainNav li ul.flyOut li h4:hover a{border-top:1px solid #000;border-bottom:1px solid #000;}
+						.mainNav li ul.flyOut li a
+						{
+							
+							height:34px;
+							line-height:34px;
+							display:block;
+							white-space:nowrap;
+							padding-left:43px;
+							margin:0;
+							text-indent:0;
+							width:auto;
+							float:none;
+							font-size:15px;
+							background:none;
+						}
+							.mainNav li ul.flyOut li a.subsubmenuTrigger							
+							{
+								background:url(https://halo.bungie.net/images/base_struct_images/top_nav/subnavArrows.png) 95% center no-repeat;
+							}
+							.mainNav li ul.flyOut li a:hover
+							{
+                        		
+                        		text-decoration:none;
+                        		color:#FFF;
+                        		
+							}
+							
+						.mainNav li ul.flyOut li ul{width:auto;border-bottom:2px solid #1e1919;}
+							.mainNav li ul.flyOut li ul li
+							{
+                    			margin-bottom:0px;
+                    			float:none;
+                    			
+                    			width:auto;
+							}
+								.mainNav li ul.flyOut li ul li:hover{}
+									.mainNav li ul.flyOut li ul li:hover a{background:none;}
+                 				.mainNav li ul.flyOut li ul li a
+                 				{
+                 	    			background:none;
+                 	    			font-size:13px;
+                 	    			float:none;
+                 	    			width:auto;
+                 	    			height:auto;
+                 	    			line-height:25px;
+                 				} 
+                 					.mainNav li ul.flyOut li ul li a:hover{text-decoration:none;background:#0b0b0b;}
+                 					.mainNav li ul.flyOut li ul li a span{display:none;}               
+				.mainNav > li:hover ul.flyOut{left:0px;}
+				.mainNav li ul.flyOut li ul.subsubmenu li a
+				{
+					padding-left:24px;
+				}
+			.mainNav div.imgAvatar
+			{
+				position:absolute;
+				right:-52px;
+				top:7px;
+				width:52px;
+				height:52px;
+			}
+	ul.utilityNav{float:right;width:158px;padding-left:58px;overflow:hidden;}
+		ul.utilityNav li{list-style:none;margin-bottom:3px;}
+			ul.utilityNav li.signedOut
+			{
+        		line-height:68px;
+				height:68px;
+				font-size:15px;
+				margin-bottom:0;
+			}
+				ul.utilityNav li.signedOut a img{vertical-align:middle;}
+				ul.utilityNav li.signedOut a{font-size:17px;}
+			ul.utilityNav li.signedIn
+			{
+        		margin:13px 0;
+        		margin-bottom:0;
+        		overflow:hidden;
+			} 
+				ul.utilityNav li.signedIn p
+				{
+            		margin-bottom:0;
+            		float:left;
+            		white-space:nowrap;
+            		font-size:11px;
+				}
+				ul.utilityNav a.signOut
+				{
+            		margin-left:10px;
+            		line-height:18px;
+            		font-size:9px;
+            		display:inline;
+				}
+				ul.utilityNav li.signedIn ul{clear:both;padding-top:11px;}
+					ul.utilityNav li.signedIn li{display:inline;}
+						ul.utilityNav li.signedIn li a
+						{
+                    		display:block;
+                    		width:auto;
+                    		height:14px;
+                    		float:left;
+						}
+						ul.utilityNav li.signedIn li.gameIcon a
+						{
+							border-right:1px solid #3f556d;
+							padding:0 5px 0 0;
+							margin-right:5px;
+						}
+							ul.utilityNav li.signedIn li.gameIcon a img
+							{
+								position:relative;
+								top:-2px;
+							}
+						      
+						ul.utilityNav li.signedIn li.messages a
+						{
+							background:url("https://halo.bungie.net/images/base_struct_images/db_message_icon.gif") no-repeat scroll 0 4px transparent;
+							padding:0 0 0 18px;
+							margin-right:0; 
+							font-size:11px;	
+						}
+						ul.utilityNav li.signedIn li.friends a
+						{
+							background:url("https://halo.bungie.net/images/base_struct_images/db_friends_offline_icon.gif") no-repeat scroll 4px 3px transparent;
+							padding:0 0 0 18px;
+							margin-right:10px;
+							font-size:11px;
+							width:18px;
+						}
+						
+						ul.utilityNav li.signedIn li.friendsLink a
+						{
+							background:url("https://halo.bungie.net/images/base_struct_images/db_friends_offline_icon.gif") no-repeat scroll 4px 3px transparent;
+							padding:0 0 0 18px;
+							margin-right:0;
+							font-size:11px;
+							width:37px;
+						}
+						
+						ul.utilityNav li.signedIn li.friendsOnline a
+						{
+							background:url("https://halo.bungie.net/images/base_struct_images/db_friends_online_icon.gif") no-repeat scroll 4px 3px transparent;
+							padding:0 0 0 18px;
+							font-size:11px;
+							margin-right:10px;
+							font-size:11px;  	
+						}
+
+div table.layout { border-collapse: collapse; margin: 0; padding: 0; border: 0; width: 100%;}
+div table.layout tr { margin: 0; padding: 0; border: 0; }
+div table.layout tr td { margin: 0; padding: 0; border: 0; vertical-align: top;}
+
+div.block-a { background-color: #1b1d1f; margin: 0 0 8px 0; padding: 0 0 8px 0; float: left; width: 100%;}
+	div.block-a h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_h2.gif); height:28px; padding: 8px 0 0 15px; text-transform: uppercase; width: 100%; }
+	div.block-a h2.stats_sign_up {text-transform:none; color:#fff;}
+	div.block-a h3 { height: 18px; padding: 4px 0 0 15px; background: #20425e;}
+	div.block-a h3 { height: 18px; padding: 4px 0 0 15px; background: #021e34; border-top: 1px solid #3f5c94; border-bottom: 1px solid #3f5c94}
+	div.block-a h4.smallcaps { font:bold 14px/16px Arial, Helvetica, sans-serif; padding: 2px 0 0 12px; clear: both; float: left; width: 100%;}
+	div.block-a.age-gate { background: black;}
+		div.block-a.age-gate h2 { background: none; text-transform: uppercase; font-size: 19px; color: #fff;}
+		div.block-a.age-gate div.list-age.addpadding { padding-left: 15px; margin-top: 10px;}
+		div.block-a.age-gate div.list-age.addpadding p { margin-bottom: 10px; line-height: 15px;}
+		div.block-a.age-gate div.list-age div.formgroup1 { background: none; color: #fff; border: none; padding-left: 15px;}
+		div.block-a.age-gate div.list-age div.formgroup1 p{ margin-bottom: 17px;}
+		div.block-a.age-gate div.list-age div.formgroup1 input.textInput { float: left; margin-right: 10px;}
+		div.block-a.age-gate div.list-age div.formgroup3 { background: none; color: #fff; border: none; padding: 0; float: left;}
+		div.block-a.age-gate div.list-age div.formgroup3 ul { float: left; list-style: none; display: inline;}
+		div.block-a.age-gate div.list-age div.formgroup3 ul li{ float: left; list-style: none; display: inline;}
+		div.block-a.age-gate div.list-age div.formgroup3 a { float: left; margin-right: 15px; outline:0;}
+		div.block-a.age-gate div.list-age div.formgroup3 a.agegatecontinue { background: url(https://halo.bungie.net/images/base_struct_images/agegateconfirm.jpg) no-repeat top center; display: block; width: 111px; height: 24px; text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a.agegatecancel { background: url(https://halo.bungie.net/images/base_struct_images/agegatecancel.jpg) no-repeat top center; display: block; width: 87px; height: 24px;text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a.agegatedl { background: url(https://halo.bungie.net/images/base_struct_images/agegatedl.jpg) no-repeat top center; display: block; width: 111px; height: 24px;text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a.codesubmit { background: url(https://halo.bungie.net/images/redeem/btn_submit.jpg) no-repeat top center; display: block; width: 63px; height: 24px; text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a.code-signin { background: url(https://halo.bungie.net/images/redeem/btn_signin.jpg) no-repeat top center; display: block; width: 99px; height: 24px; text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a.code-signup { background: url(https://halo.bungie.net/images/redeem/btn_createaccount.jpg) no-repeat top center; display: block; width: 136px; height: 24px; text-indent: -9000px}
+		div.block-a.age-gate div.list-age div.formgroup3 a:hover { background-position: bottom center;}
+
+div.block-b { margin: 0 -6px 8px 0;}
+	div.block-b h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_h2.gif) no-repeat; height:25px; padding: 5px 0 0 15px; border-bottom: 1px solid #444; text-transform: uppercase; width: 100%; float: left; margin-bottom: 5px;}
+	div.block-b h3 { height: 18px; padding: 4px 0 0 15px;float: left; width: 100%;}
+	div.block-b h3 a { display: block; margin: 0 8px 0 0; padding: 0; background: #203660 url(https://halo.bungie.net/images/base_struct_images/bg_block_a_h3.gif) no-repeat right; }
+	div.block-b h4 {padding: 0px 0 0 15px;width: 100%; float: left;}
+
+div.bgdark {background-color:#111; }
+div.block-db { margin: 0 0 0 0;  padding: 0; width: 400px; height: 75px; float: right; position:absolute;  }
+
+div.block-c { background: #4a5c62 url(https://halo.bungie.net/images/base_struct_images/bg_block_c.gif) no-repeat bottom right; margin: 0; padding: 0 0 2px 0;}
+	div.block-c h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_block_c_h2.gif); height:28px; padding: 12px 0 0 15px; text-transform: uppercase;}
+
+div.block-d { background: #4a5c62 url(https://halo.bungie.net/images/base_struct_images/bg_block_d.gif) bottom right; margin: 0; padding: 0 0 2px 0;}
+	div.block-d h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_block_d_h2.gif); height:28px; padding: 12px 0 0 15px; text-transform: uppercase; color: #fff;}
+
+div.block-f { margin: 0; padding: 0 0 2px 0;}
+	div.block-f h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_block_d_h2.gif); height:28px; padding: 12px 0 0 15px; text-transform: uppercase; color: #fff;}
+
+div.block-g { background: #4a5c62 url(https://halo.bungie.net/images/base_struct_images/bg_block_g.gif) no-repeat bottom right; margin: 0; padding: 0 0 2px 0;}
+	div.block-g h2 { background: url(https://halo.bungie.net/images/base_struct_images/bg_block_c_h2.gif); height:28px; padding: 12px 0 0 15px; text-transform: uppercase;}
+
+div.list-a { margin: 0px 10px 15px 15px;}
+	div.list-a div.info { float:left; width: 160px; margin: 0; padding: 3px 10px 0 0; }
+	div.list-a .floatLeftInline { float:left; display: inline; }
+	div.list-a img.ifthen { margin: 3px 10px 5px 0; float: left; }
+	div.list-a > h6,
+	div.list-a > h5,
+	div.list-a > h4, 
+	div.list-a > p, 
+	div.list-a > div.stdcontent,
+	div.list-a > ul.arrow1 { margin-left: 170px;}
+	div.list-a h5 { font-size: 13px; line-height: 16px; }
+	div.list-a h5.news { font-size: 12px; margin: 0; padding: 0 0 0 13px; }
+	div.list-a p.newsblurb { margin-left: 40px; } 
+	div.list-a h5.quote { padding: 0 0 15px 0; color: #336e91; font-style: italic; }
+	div.list-a-small-margin { margin: 10px 10px 15px 15px; }
+	div.list-a-small-margin div.info { display: block; float:left; }
+	div.list-a-small-margin div.info img { float: none; margin: 3px 10px 5px 0;}
+	div.list-a-small-margin .floatLeftInline { float:left; display: inline;}
+	div.list-a-small-margin > h5, 
+	div.list-a-small-margin > h6, 
+	div.list-a-small-margin > h4,
+	div.list-a-small-margin > p, 
+	div.list-a-small-margin > div.stdcontent,
+	div.list-a-small-margin > ul.arrow1 { margin-left: 43px;}
+	div.list-a-small-margin h5 { font-size: 13px; line-height: 16px; }
+	div.list-a-small-margin div.top_story_content div.stdcontent { width: auto; }
+
+div.list-b { margin: 0px 10px 15px 15px; }
+	div.list-b-jobtext { font: 12px/15px Arial, Helvetica, sans-serif; margin: 0; }
+	div.list-b-jobs { font: 12px/15px Arial, Helvetica, sans-serif; margin: 0px 10px 10px 10px; }
+	div.list-b-jobs h4 {padding:0; margin:5px 0 5px 0; text-decoration:underline;}
+	div.list-b-jobs ul { font: 12px/18px Arial, Helvetica, sans-serif; margin:5px 0 5px 20px;}
+	div.list-b-jobs ul li{clear:both;}
+	div.list-b-jobtext p { font: 12px/15px Arial, Helvetica, sans-serif; margin-top: 7px; margin-left: 10px; }
+
+ul.results { list-style-type: none; text-transform:none; height:18px; margin: 6px 0 0  0; padding:0; float: right; text-align: right; padding-right: 10px;}
+	ul.results li { display: inline; margin: 0; padding:0 4px 0 0; }
+
+.compareWrap .finder_cont, .boxB .finder_cont { margin: 5px auto 5px auto; width: 266px; }
+.compareWrap .finder_cont table tr th, .boxB .finder_cont table tr th {     color: White; font: bold 14px Arial, Helvetica, sans-serif; }
+.compareWrap .finder_cont table tr td , .boxB .finder_cont table tr td { margin: 0; padding: 1px 1px 1px 5px; border: 0; color: White; text-align:left; }
+.compareWrap .finder_cont a, .boxB .finder_cont a { color: #71caef }
+.compareWrap .finder_cont a:hover, .boxB .finder_cont a:hover { text-decoration: underline; color: white; }
+
+.list-b .people_search_results{border-top:1px solid #515151;width:570px;height:auto;margin-bottom:5px; float: left;}
+	.list-b .people_search_results ul.arrow2 { margin: 0;}
+	.list-b .people_search_results ul.arrow2 li { background-position: top left; height: 20px;}
+	.list-b .people_search_results ul li,.list-b .people_search_results ul li a{font-size:12px;}
+    .list-b .people_search_results span{float:left;margin-top:6px;}
+    .list-b .people_search_results ul.results{float:right;text-align:right;}
+
+div.list-b h5 { margin: 0; padding: 0 0 0 13px; }
+div.list-b li { color: #bbb; }
+
+div.list-c { margin: 0px 10px 15px 15px;}
+	div.block-a.newsblock2 div.list-c { width: 235px; }
+	div.list-c .feature { margin: 3px 0 0 10px; float: right;}
+	div.list-c h5 {padding: 3px 0 0 0;}
+	div.list-c h5.link_h5 {padding: 3px 0 0 0;}
+	div.list-c h5.quote { padding: 0 0 15px 0; font-size: 15px; line-height: 18px; color: #336e91; font-style: italic; }
+	div.list-c h6.post { font-size: 10px; color: #fff; font-weight: bold; font-style: normal; margin:0; padding: 0; }
+	div.list-c p.main { margin: 0; padding: 0; width: 300px; float: left; }
+	div.list-c ul.popup { margin: 0; padding: 0; text-align: right; }
+	div.list-c ul.popup li { display: inline; margin: 0 0 0 0; }
+	div.list-c ul.popup li a { display: inline; vertical-align: top; margin: 0 0 0 4px;}
+
+div.list-d { margin: 10px 10px 15px 15px;}
+	div.list-d img { margin: 3px 10px 0 0; float: right;}
+	div.list-d > h3,
+	div.list-d > h4,
+	div.list-d > h5,
+	div.list-d > h6,
+	div.list-d > p,
+	div.list-d > ul { color: #fff; margin-right: 320px;}
+	div.list-d h5 { font-size: 15px; line-height: 18px; }
+	div.list-d h5 a { color: #fff;}
+
+div.list-db { margin: 5px; padding: 0; float: left;  }
+	div.list-db img { margin: 0; padding: 0 ; }
+	div.list-db > h3,
+	div.list-db > h4,
+	div.list-db > h5,
+	div.list-db > h6,
+	div.list-db > p, 
+	div.list-db ul { font-size: 12px; margin: 0; padding: 0;  }
+	div.list-db ul.dbItems { margin: 0; padding: 0; clear:both; text-align: left;}
+	div.list-db ul.dbItems_list { margin: 0; padding: 0;}
+	div.list-db ul.dbItems_list li { margin: 0;  float:left; }
+	div.list-db ul.dbItems_list li a {  margin: 0; padding:0 2px 0 2px; text-align: left; }
+
+	div.list-db ul li a.list-db-friends { padding: 0 0 0 18px; background: url(https://halo.bungie.net/images/base_struct_images/db_friends_online_icon.gif) no-repeat; background-position: 4px 3px; } 
+	div.list-db ul li a.list-db-friends-offline { padding: 0 0 0 18px; background: url(https://halo.bungie.net/images/base_struct_images/db_friends_offline_icon.gif) no-repeat; background-position: 4px 3px; } 
+	div.list-db ul li a.list-db-nofriends { padding: 0 0 0 18px;background: url(https://halo.bungie.net/images/base_struct_images/db_nofriends_icon.gif) no-repeat; background-position: 0px 3px; } 
+	div.list-db ul li a.list-db-messages {padding: 0 0 0 18px; background: url(https://halo.bungie.net/images/base_struct_images/db_message_icon.gif)  no-repeat; background-position: 0px 4px; } 
+	div.list-db ul li a.list-db-update {padding: 0 0 0 18px; background: url(https://halo.bungie.net/images/base_struct_images/newicon_on.gif)  no-repeat; background-position: 0px 0px; padding:0 2px 0 18px } 
+	div.list-db ul li a.list-db-noupdate {padding: 0 0 0 18px; background: url(https://halo.bungie.net/images/base_struct_images/newicon_off.gif)  no-repeat; background-position: 0px 4px; }
+
+div.list-dbpassport { margin: 5px 0 5px 0px; padding: 0; float: right; }
+	div.list-dbpassport ul { margin: 0; padding: 0;}
+
+div.list-e { margin: 10px 10px 15px 15px; }
+	div.list-e img { margin: 0 0 8px 0;}
+	div.list-e > h3,
+	div.list-e > h4,
+	div.list-e > h5,
+	div.list-e > h6,
+	div.list-e h5 { background: url(https://halo.bungie.net/images/base_struct_images/arrow_2.gif) no-repeat;}
+	div.list-e h5.co { background: url(https://halo.bungie.net/images/base_struct_images/updateicon_co.gif) no-repeat; }
+	div.list-e h5.co a { padding: 0 0 0 20px }
+	div.list-e h5.ib { background: url(https://halo.bungie.net/images/base_struct_images/updateicon_ib.gif) no-repeat; }
+	div.list-e h5.ib a { padding: 0 0 0 20px }
+	div.list-e h5.pr { background: url(https://halo.bungie.net/images/base_struct_images/updateicon_pr.gif) no-repeat; }
+	div.list-e h5.pr a { padding: 0 0 0 20px }
+	div.list-e h5.st { background: url(https://halo.bungie.net/images/base_struct_images/updateicon_st.gif) no-repeat; }
+	div.list-e h5.st a { padding: 0 0 0 20px }
+	div.list-e h5.su { background: url(https://halo.bungie.net/images/base_struct_images/updateicon_su.gif) no-repeat; }
+	div.list-e h5.su a { padding: 0 0 0 20px }
+
+div.list-f { margin: 10px 10px 15px 15px;}
+	div.list-f img { margin: 3px 0 0 10px; float: right;}
+	div.list-f > h3,
+	div.list-f > h4,
+	div.list-f > h5,
+	div.list-f > h6,
+	div.list-f > p,
+	div.list-f > ul { color: #fff; }
+	div.list-f h5 { font-size: 15px; line-height: 18px; }
+	div.list-f h5 a { color: #fff;}
+	div.list-f h5.list { margin: 5px 0 5px 0; font-size: 13px; line-height: 18px; }
+
+div.list-g { margin: 4px 10px 0 15px; }
+	div.list-g img { margin: 3px 10px 5px 0; float: left;}
+	div.list-g a.floatLeftInline { float: left; display: inline; }
+	div.list-g > h5, 
+	div.list-g > h6, 
+	div.list-g > p, 
+	div.list-g > ul.arrow1 { margin-left: 76px;}
+	div.list-g h5 { font-size: 15px; line-height: 18px; }
+
+div.list-h { margin: 6px 3px 8px 7px; padding: 0; }
+	div.list-h img { margin: 0px 0 8px 0;}
+	div.list-h img { margin: 0px 0 8px 0;}
+	div.list-h h5.title { font-size: 15px; line-height: 18px; }
+	div.list-h h5{ font-weight: normal; font-size: 13px; padding-bottom: 2px; line-height: 18px; font-weight: bold;}
+	div.list-h p{ font-weight: normal; font-size: 11px; margin-bottom: 0px; padding-bottom: 0px;  color: #9d9d9d; padding-left: 11px;}
+	div.list-h strong{ font-weight: normal; font-size: 14px; padding-bottom: 0px;}
+
+div.list-i { margin: 6px 10px 0 15px; padding: 5px 0 5px 0; background: #ddd url(https://halo.bungie.net/images/base_struct_images/bg_list_i.gif);}
+	div.list-i img { margin: 0;}
+
+div.list-k { margin: 0px  10px 5px 15px; }
+
+.pagination_container { padding: 5px; background: #3f484b; border: solid 1px #3f484b;} 
+.pagination_container .first_previous_arrows { margin-top: 2px; padding: 0 0 0 10px;} 
+.pagination_container .last_next_arrows { padding: 0 10px 0 0;}
+
+div.list-m { margin: 0 0 1px 0; padding: 5px 10px 5px 15px; background-color: #3f3f40; overflow: hidden; text-align: center; }
+	div.list-m img { margin: 3px 10px 5px 0; float: left; }
+	div.list-m img.thumbnail { margin: 5px 5px 5px 0; float: none; }
+	div.list-m > ul.arrow1 { margin-left: 76px;}
+	div.list-m h5 { font-size: 12px; margin: 0; padding: 4px 0 0 0; text-align: left; }
+	div.list-m h6 { font-size: 10px; color: #fff; text-align: left; }
+	div.list-m p { font-size: 11px; color: #fff; }
+
+div.list-t { margin: 0 0 1px 0; padding: 5px 10px 5px 15px; background-color: #000; }
+	div.list-t p { color: #fff; }
+
+div.list-n { margin: 8px 0 1em 0; }
+	div.list-n ul { list-style-type: none; margin: 0; padding: 2px 0 2px 0; color: #222; background: #d0d6dc; }
+	div.list-n ul li { font-size: 13px; font-weight: bold; display: inline; text-align: left; margin: 0 0 0 15px; padding: 0; }
+	div.list-n ul li.select { display: inline; text-align: left; margin: 0; padding: 0; }
+	div.list-n h4 { margin: 0; padding: 0 0 0 15px; color: #222; }
+	div.list-n h5 { margin: 0; padding: 4px 0 0 15px; color: #222; background: #d0d6dc; }
+	div.list-n h6 { margin: 0; padding: 0 0 4px 15px; color: #222; background: #d0d6dc; }
+
+div.list-o { margin: 0 10px 15px 15px; }
+	div.list-o h5 { margin: 10px 0 0 0; color: #fff; }
+
+div table.grid { border-collapse: collapse; margin: 8px 0 0 0; padding: 0; border: 0; width: 100%; float: left; }
+	div table.grid  h3 { height: 18px; margin: 0; padding: 4px 0 0 15px;font-size:12px;	}
+	div table.grid tr { margin: 0; padding: 0; border: 0; }
+		div table.grid tr th { margin: 0; padding: 0 0 0 0; border: 0; vertical-align: top; text-align:left; overflow: hidden; word-wrap: break-word; background:#0E0F10 url(https://halo.bungie.net/images/base_struct_images/contentBg/boxD-back.jpg) repeat-x scroll center bottom; }
+			div table.grid tr th h3 a { display: block; padding: 0;text-decoration: none; font-size: 14px; line-height: 40px; text-transform:none; color:white;}
+			div table.grid tr th h3 a:hover { text-decoration: underline;}
+			div table.grid tr th h4 { font-weight: normal; height: 18px; margin: 0; padding: 4px 0 0 5px;width: 100%;}
+			div table.grid tr th h4 a { font-weight: normal; display: block; padding: 0; background: #d0d6dc url(https://halo.bungie.net/images/base_struct_images/bg_block_a_h3.gif) no-repeat right; text-decoration: none; }
+			div table.grid tr th h4 a:hover { text-decoration: underline;}
+			div table.grid tr td { margin: 0; padding: 0 0 0 0; border: 0; vertical-align: top; overflow: hidden; word-wrap: break-word;  border-bottom: 1px solid #222222; border-top: 1px solid #222222;}
+		div.community_colB table.grid tr th { height:45px;}
+		div.LongBoxBackground table.grid tr th { height:auto;}		
+		div table.grid tr.even { background: #2F3032; } 
+		div table.grid tr.odd { background: #363d40; }
+		div table.grid tr.new { background: #5f585b; }
+div table.grid_default { table-layout: fixed }
+
+div table.bio { border-collapse: collapse; margin: 3px 0 0 0; padding: 0; border: 0; width: 436px; }
+	div table.bio tr { margin: 0; padding: 0; }
+	div table.bio tr td { margin: 0; padding: 0 0 1px 0; border: 0; vertical-align: top;}
+	div table.bio tr td p { height: 18px; margin: 0; padding: 4px 0 0 10px; background: #203660; color: #fff; }
+
+div.list-a .regularNewsIcon { margin: 3px 10px 5px 0; float: left; width: 30px; height: 30px; position:relative; min-height:30px; display:inline;}
+div.list-a-small-margin .regularNewsIcon { margin: 3px 10px 5px 0; float: left; width: 30px; height: 30px;position:relative; min-height:30px; display:inline;}
+div.list-c ul.termsofuse li {padding:0 0 10px 10px; list-style-type:none; }
+div.list-c h3 { width: 600px; display: block; }
+div.colLast div.block-b div.list-c h3 { width: 100%; }
+div.list-c h3 span.notCurrentStepSpan { color: #6b6d70; font-weight: lighter; }
+div.list-c h5.clear { clear:both; }
+
+div.stdcontent  {font: 12px/20px Arial, Helvetica, sans-serif; color:#bbb; margin: 0 0 1em 0; padding: 0; }
+
+.project_hub_left { float:left; margin:5px 0 0 5px; width: 275px; }
+.player_info { margin:0; padding: 10px 0 0 10px; width: 210px;  height: 250px; position:relative; color: White;  }
+.player_info ul { margin: 0; padding: 0px; list-style: none; color: #ffffff; }
+.player_info ul li { color:#bababa; font-size: 14px; line-height:20px; padding: 0 0 3px;}
+.player_info ul li.larger { color:#fff; font-size: 20px; line-height:30px; padding: 0;}
+.player_info ul li.larger a { font-size: inherit;}
+.player_info .location {padding-top:5px; color: #ffffff;  }
+
+.content {padding:0;margin:0; }
+.content a.rating {float:right;margin:60px 5px 0 0; }
+
+.medals { margin: 0; padding: 0; height: 55px; background-color: #141618;  overflow: hidden;  border-bottom: solid 1px #999a9b; border-top: solid 1px #494a4b;   }
+.medals ul { margin: 0; padding: 0; list-style: none; }
+.medals ul li {margin: 0; padding: 0; display: inline; }
+
+.medal_over_img { margin: 0; padding: 5px 0px 5px 0px; float: left; }
+
+.overview { margin: 0; padding: 0; width:281px;}
+.overview .overview_table {padding:0; margin:0; }
+.overview table th { color: White; font: bold 12px Arial, Helvetica, sans-serif; text-align: center; }
+.overview table td { padding: 1px 2px 1px 2px; color: White; font: 10px Arial, Helvetica, sans-serif; text-align: center; }
+.overview table th.playlist { padding-left: 0px; text-align: left; }
+.overview table td.playlist { padding-left: 0px; text-align: left; }
+.overview table td.experience { padding-left: 0px; text-align:center; }
+
+.gamertag { margin: 0; padding: 1px 0px 0 0px; width: 256px; float:right; overflow: hidden;  }
+.faq { margin: 0; padding: 14px 275px 0 0; float: right;  }
+.field { width: 110px; margin: 0; padding: 5px 20px 0 0; text-align: right; vertical-align: top; font: bold 12px Arial,Helvetica,  sans-serif; color: white; } 
+.text_entry { width: 410px; }
+.display { margin: 0px; padding: 0px; float: right; }
+.title { font-weight: normal; }
+.gamercard {visibility:visible;}
+
+.error_message { padding: 8px 20px 5px 0; font-size: 15px; line-height: 18px; }
+
+div.topNews_RightCategoryImage { margin:0px 0 0 0; padding: 0; float: left; position:relative; width:310px; height:255px;  }
+div.topStoryImg {float:left;margin:0 5px 0 5px;height:40px;width:30px;padding:7px 0 0 0;}
+div.newsItem {background: transparent url(https://halo.bungie.net/images/base_struct_images/news/topstorybodyback.png);border-top:2px solid #414141;padding:0;margin: 0 0 10px;}
+div.newsItem .newsheaderwrapper { background: transparent url(https://halo.bungie.net/images/base_struct_images/news/newsgradientspotlight.png) repeat-x scroll center top;display:block; height:55px; }
+div.mediaNewsItem {border-top:solid 1px #3e3e3e; padding:0 0 0px 0;}
+div.newsImg {float:left;margin:0 5px 0 10px;height:30px;width:30px;padding:10px 0 0 0;}
+div.regnewsItem {background: transparent url(https://halo.bungie.net/images/base_struct_images/news/newsbodyback.png);border-top:2px solid #485b62;padding:0;margin: 0 0 10px;}
+div.news_block .regnewsItem .newsheaderwrapper { background: transparent url(https://halo.bungie.net/images/base_struct_images/news/newsgradient.png) repeat-x scroll center top;display:block; height:55px; }
+div.news_left_col {float:right;width:165px;display: block;padding:10px 4px 10px 0px;margin:0;}
+div.news_header { height:265px;}
+div.news_header h5 {font-size:25px;line-height:40px;width:100%;padding:0;margin:0;font-weight:normal;}
+span.news_headline {font:15px/17px Arial, Helvetica, sans-serif; font-weight:800; padding-bottom: 56px;}
+div.newsStoryBody ul, div.top_story_content ul { margin-left: 20px; margin-top: 10px; margin-bottom: 10px; }
+div.newsStoryBody ol, div.top_story_content ol { margin-left: 20px;margin-top: 10px; margin-bottom: 10px; list-style: decimal;}
+div.newsStoryBody a img{ width:100%; }
+
+div.colLast.newsStoryHolder {width:902px; background-color: black; background-repeat:no-repeat; background-position: top left;}
+.top_story_content {width: auto; float: left; margin:10px 0 15px 0;padding:0 15px;  }
+.top_story_content div.stdcontent{ width: 700px; font-size: 13px;}
+.top_story_content div.stdcontent p { font-size: 13px; }
+.rss_blog {float:right;margin:-20px 5px 0 0;}
+.blog_msg_box {width:298px;border:solid 1px #555555;margin:7px 0 0 0;}
+div.navblock_right ul li a.topNewsNav_DarkBlock { display:block; width: 150px; color:#eee; font:11px Arial, Helvetica, sans-serif; padding: 2px 5px 0 5px; height:31px;  background: url(https://halo.bungie.net/images/base_struct_images/selected.gif) top left; }
+div.navblock_right ul li a:hover.topNewsNav_DarkBlock {display:block; width: 150px; text-decoration:none;  background: url(https://halo.bungie.net/images/base_struct_images/selected.gif) bottom left; }
+div.navblock_right ul li a.topNewsNav_LightBlock {display:block; width: 150px; color:#eee; font:11px Arial, Helvetica, sans-serif; padding: 2px 5px 0 5px; height:31px;  background: url(https://halo.bungie.net/images/base_struct_images/selected.gif) bottom left; }
+div.navblock_right ul li a:hover.topNewsNav_LightBlock {text-decoration:none;}
+div.navblock_right ul li a.last {display:block; width: 190px; padding: 10px 0 0 0px;float:right; text-align:center; height:30px; }
+
+.community_cols { margin: 1px 0 0 0; padding: 0; width: 902px; height: 100%; background: black;}
+.community_cols_flip { margin: 1px 0 0 0; padding: 0; width: 902px; height: 100%; background: url(https://halo.bungie.net/images/base_struct_images/contentBg/body_bg_flip.gif) repeat-y; }
+	.community_cols_flip .col{width: 601px;}
+div.community_colA { width: 300px; height: 100%; margin: 0; padding: 0; float: left; }
+div.community_colB { width: 902px; height: 100%; margin: 0; padding: 0; float: left; }
+.online_sidebar { width: 300px; height: 100%; background: #0c0c0c url(https://halo.bungie.net/images/base_struct_images/headers/headersidebar.jpg) top left no-repeat; }
+.signup_header { width: 902px; height: 336px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/headers/signup_header.jpg) top left no-repeat; }
+.signup_header a.bluebutton { width: 200px; float:right; margin:15px; }
+.com_header_public { width: 902px; height: 100px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/headers/seventhcolumn.jpg) top left no-repeat; }
+.com_header_groups { width: 902px; height: 100px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/headers/seventhcolumn.jpg) top left no-repeat; }
+
+.text_large { font: 24px/33px Arial, Helvetica, sans-serif; color: #fff; border-bottom: 2px solid #aaaaaa; }
+.news_tag_txt { font: 14px/16px Arial, Helvetica, sans-serif; color: #fff; text-transform:none; text-decoration:none; margin:6px 0 0 0; float:left; }
+.news_tag_hdr {height:30px;padding:0 0px 0 15px;border-top:solid 1px #555555;}
+.community_trans { margin: 0px; width: 300px; height: 130px; background: #000000; opacity: 0.35; -moz-opacity: 0.35; filter: alpha(opacity=35); }
+
+.community_hub { width: 282px; margin: -124px 0 22px 0; position: relative; left: 9px; }
+	.community_hub ul { margin: 0; padding: 0; list-style-type: none; }
+	.community_hub ul a:link { font:  16px/30px Arial, Helvetica, sans-serif; color: #dad9d9; display: block; width: 272px; height: 30px; margin: 7px 0 0 0; padding: 0 0 0 10px; background: url(https://halo.bungie.net/images/base_struct_images/linkBt/button.gif) no-repeat left bottom;  }
+	.community_hub ul a:visited { font:  16px/30px Arial, Helvetica, sans-serif; color: #dad9d9; display: block; width: 272px; height: 30px; margin: 7px 0 0 0; padding: 0 0 0 10px; background: url(https://halo.bungie.net/images/base_struct_images/linkBt/button.gif) no-repeat left bottom;  }
+	.community_hub ul a:hover { background: url(https://halo.bungie.net/images/base_struct_images/linkBt/button.gif) no-repeat left top; text-decoration: none; }
+	.community_hub ul a.selected { background: url(https://halo.bungie.net/images/base_struct_images/linkBt/button.gif) no-repeat left top; text-decoration: none; }
+
+.signup_cont {width:872px; padding:15px;}
+	.signup_cont .signup_incentive {width:872px; height:auto; display:block; margin-bottom:15px; float: left;}
+	.signup_cont .signup_incentive .image{float:left;}
+	.signup_cont .signup_incentive .words{float:right; width: 555px; background: transparent url(https://halo.bungie.net/images/base_struct_images/contentBg/signupwords.jpg) repeat-x top; min-height:152px; padding: 15px;}
+	.signup_cont .signup_incentive .words a {font-size: inherit; font-style: inherit; line-height: inherit;}
+	.signup_cont .signup_incentive .words h3 {margin:0 0 1em; font-size: 18px; color: #fcfcfc;}
+	.signup_cont .signup_incentive .words ol {list-style:decimal; margin:0; padding: 0 0 0 20px;}
+	.signup_cont .signup_incentive .words ol li {padding-bottom:1em; font-size: 13px; color: #c9c9c9;}
+	.signup_cont .signup_incentive .words p {padding-bottom:1em; font-size: 13px; color: #c9c9c9; margin: 0;}
+	.signup_cont .signup_incentive .words a.bluebutton {line-height:24px; width: 210px;}
+
+/* boxB = grey box /blue top; used on forums top topics and stats people search  */    
+.boxB { width: 281px; margin: 7px auto 10px 8px; border: solid 1px #63605d; background: #404040 url(https://halo.bungie.net/images/base_struct_images/contentBg/blueheader.jpg) no-repeat top left; float: left;}
+.boxB ul { height: 35px; list-style-type: none; margin: 3px 0 0 5px; padding: 0; }
+.boxB ul li h3 { margin: 0; padding: 0; font: 14px/14px Arial, Helvetica, sans-serif; color: #fff; text-transform: none; }
+.boxB ul li h4 { margin: 0; padding: 0; font: italic 10px/15px Arial, Helvetica, sans-serif; color: #6d7179; text-transform: none; }
+.boxB ul li a { color: #71caef; }
+.boxB ul li a:hover { color: #fff; }
+.boxB h4 { margin: 0; padding: 10px 0 0 10px; text-align: left; text-transform: none; font-weight: normal; font-size: 14px;  height: 26px;}
+.boxB .recent_info_cont { width: 161px; height: 90px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/contentBg/halo2statbg.gif) no-repeat top left; border-bottom: 1px solid #252626;  }
+.boxB .recent_id_info_cont { width: 135px; height: auto; float: right; }
+.boxB .recent_pic_halo2 { width: 120px; height: 90px; margin: 0 0 0 0; float: left; border-bottom: 1px solid #252626; }
+.boxB .recent_id_pic { width: 70px; height: 70px; margin: 0 0 0 0; float: left; }
+
+/* boxA = grey box ; used on forums and stats */
+.boxA { width: 281px; margin: 7px auto 0 8px; border: solid 1px #63605d; background: #404040 url(https://halo.bungie.net/images/base_struct_images/contentBg/blueheader.jpg) no-repeat top left; float: left;}
+.profile_boxA .boxA { background: transparent url(https://halo.bungie.net/images/base_struct_images/contentBg/profile-card-back.png) no-repeat bottom right; border: none; float: left; height: 70px; margin: 0 auto 10px 0; width:215px;}
+.boxA ul { height: 35px; list-style-type: none; margin: 3px 0 0 5px; padding: 0; }
+.boxA ul li h3 { margin: 0; padding: 0; font: 14px/14px Arial, Helvetica, sans-serif; color: #fff; text-transform: none; }
+.boxA ul li h4 { margin: 0; padding: 0; font: italic 10px/15px Arial, Helvetica, sans-serif; color: #6d7179; text-transform: none; }
+.boxA ul li a { color: #71caef; }
+.boxA ul li a:hover { color: #fff; }
+.boxA .grid { margin: 5px auto 5px auto; width: 266px; height: 141px; background: transparent url(https://halo.bungie.net/images/base_struct_images/contentBg/grid.gif); }
+.boxA .daily_count_cont { float:right; } 
+.boxA ul.daily_count { margin: 4px 0 0 0; width: 100%; height: 25px; border-top: solid 1px #545454; border-bottom: solid 1px #272727; } 
+.boxA ul.daily_count li { display: block; float: left; margin: 0 0 0 5px; font: 14px/27px Arial, Helvetica, sans-serif; color: #fff; } 
+.boxA ul.daily_count li.styled { font: italic 12px/27px Arial, Helvetica, sans-serif; color: #6D7179;  }
+.boxA h4 { float:right; font-size: 14px; font-weight: normal; margin:0; padding:0; text-align:left; text-transform:none; width: 135px; line-height:20px}
+.boxA h4 a { font-size: 14px; width: 125px; line-height:20px; height: 20px; display:block; background: url(https://halo.bungie.net/images/base_struct_images/contentBg/profile-link-arrow.png) no-repeat right;}
+.boxA .campaign_pic { width: 40px; height: 56px; padding: 8px 2px 0 7px; float: left; }
+.boxA ul.recent_info { float:right; margin:0; padding: 0 0 0 4px; width: 135px; }
+.boxA .recent_info_cont { width: 161px; height: 90px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/contentBg/halo3statbg.gif) no-repeat top left; border-bottom: 1px solid #252626;  }
+.boxA .recent_id_info_cont { width: 135px; height: auto; float: right; }
+.boxA .recent_info_cont_ss { width: 121px; height: 90px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/contentBg/halo3statbg.gif) no-repeat top left; border-bottom: 1px solid #252626;  }
+.boxA .recent_info_cont_sp { width: 161px; height: 90px; float: left; position:relative; margin: -90px 0 0 0px;   }
+.boxA .recent_pic_halo3 { width: 120px; height: 90px; margin: 0 0 0 0; float: left; border-bottom: 1px solid #252626; }
+.boxA .recent_pic_halo3_ss { width: 160px; height: 90px; margin: 0 0 0 0; float: left; border-bottom: 1px solid #252626; }
+.boxA .recent_pic_halo3_sp { width: 281px; height: 90px; margin: 0 0 0 0; float: left; border-bottom: 1px solid #252626; }
+.boxA .recent_id_pic { width: 70px; height: 70px; margin: 0 0 0 0; float: left; }
+.boxA .recent_info_cont_ss ul.recent_info li.rating_box a { width: 10px; height: 11px;  margin: 0 0 0 2px; float: left; } 
+.boxA .recent_info_cont_ss ul.recent_info li.rating_box a img { display: inline; border: none; }
+.boxA .recent_info_cont_ss ul.recent_info li.rating_box a:hover { border: dashed 1px #ff00ff; } 
+.boxA .recent_info_cont_ss ul.recent_info li.rating_box a.rating_star_on {  background: transparent url(https://halo.bungie.net/images/base_struct_images/online/goldseptagon_small.gif) no-repeat; }
+.boxA .recent_info_cont_ss ul.recent_info li.rating_box a.rating_star_off { background: transparent url(https://halo.bungie.net/images/base_struct_images/online/offseptagon_small.gif) no-repeat; }
+
+.community_colA .wrapper { margin: 3px 0 3px 0; }
+
+.community_colB .spotlight { width: 594px; height: 90px; margin: auto; padding: 4px 4px 0 4px; list-style: none; background: #000 url(https://halo.bungie.net/images/base_struct_images/contentBg/communityfilesgradient.jpg) repeat-x left top; } 
+.community_colB .spotlight_online { width: 598px; height: 90px; margin: auto; padding: 4px 0 0 4px; list-style: none; background: #000 url(https://halo.bungie.net/images/base_struct_images/contentBg/communityfilesgradient.jpg) repeat-x left top; }
+.community_colB .spotlight_files { width: 902px; height: 90px; list-style: none; padding:0; margin:0 0 0 0; background: #000 url(https://halo.bungie.net/images/base_struct_images/headers/filestabbanner.jpg) left top; }
+.community_colB .spotlight h1 { float: left; font: 22px/28px Arial, Helvetica, sans-serif; color: #fff; padding:4px 0 0 10px; }
+.community_colB .spotlight h3 { float: right; font: italic 12px/33px Arial, Helvetica, sans-serif; text-transform: none; color: #fff; margin: 0; padding: 0;}
+.help {margin-top:8px;}
+.help a { width: 30px; height: 22px; float: right; background: transparent url(https://halo.bungie.net/images/base_struct_images/linkBt/helpicon.gif) no-repeat center top; }
+.help a:hover { width: 30px; height: 22px; float: right; background: transparent url(https://halo.bungie.net/images/base_struct_images/linkBt/helpicon.gif) no-repeat center bottom; }
+.community_colB .spotlight .rss {float: right;padding: 11px 15px 0  0px; }
+.community_colB .spotlight .return_link { float: left; padding: 11px 5px 0  15px;}
+
+.community_colB  .profile_strip { width: 602px; margin: -55px 0 0 0; float: right; border-top: solid 1px #666666; border-bottom: solid 1px #666666; background: #161616; z-index: 1000; }
+	.community_colB .profile_strip div.model {float:left;  width:185px; height:185px;  margin:5px; border-top: solid 2px #eee; border-left: solid 2px #eee; border-bottom: solid 2px #666666; border-right: solid 2px #666666;}
+		.community_colB .profile_strip div.model img { width:185px; height:185px; }
+	.community_colB .profile_strip div.header{ font: 14px/16px Arial, Helvetica, sans-serif; color:#eee; padding: 0 0 5px 0;}
+
+
+
+
+.content_matte { position: static; margin: 0; padding: 0 0 10px 0; width: 100%; height: 100%; border-top: solid 1px #2a2b2e; background: #303437 url(https://halo.bungie.net/images/Games/Halo3/h3-project-back.jpg) repeat-x scroll center top; float:left; }
+.content_matte div.list-b table { float: left;}
+.content_matte div.colLast div.list-b span table tbody tr td{ min-width: 250px !important;}
+.content_matte div.list-b table h4{ width: 100%; }
+
+div.filesetAddWindowContainer { margin: 7px 5px 5px 5px; font: normal 11px Arial, Helvetica, sans-serif; text-transform: none; }
+	div.filesetAddWindowContainer  p { margin-bottom: 10px; padding-left:10px; }
+	div.filesetAddWindowContainer div.user_content_mini_outer_shell { float: left; margin-right:0px; }
+	div.filesetAddWindowContainer  ul.addToFileSet { margin: 0 0 0 3px; width:265px; padding: 0; list-style-type: none; overflow: hidden; }
+	div.filesetAddWindowContainer  ul.addToFileSet li { font: normal 11px Arial, Helvetica, sans-serif; text-transform: none; }
+	div.filesetAddWindowContainer .addToFileSet{width:270px;float:right;position:relative;}
+	div.filesetAddWindowContainer .addToFileSet .myFileSets{float:left;clear:both; }
+	div.filesetAddWindowContainer .addToFileSet .myFileSets span.tokenCount { color: #fff; font-size: 14px; font-weight: bolder; }
+	div.filesetAddWindowContainer .addToFileSet .input-cont {color:#000;float:right;padding:5px 12px 0 0;}
+	div.filesetAddWindowContainer .addToFileSet .addText {padding:12px 0 0 0; clear:both;}
+
+.boxD_outer { margin:5px 0px 5px 0px; border: solid 1px #666666; float: left; background: #0e0f10 url(https://halo.bungie.net/images/base_struct_images/contentBg/boxD-back.jpg) repeat-x bottom; }
+.boxD_inner { border: solid 1px #000; }
+.boxD { width: 285px;  float: left; }
+	.boxD ul.profile { height:60px; line-height:60px; }
+	.boxD ul.profile li {padding-left: 15px; line-height: 60px;}
+	.boxD h3 { margin: 0; padding:0 0 0 10px; height:25px; line-height: 25px; font: 12px/25px Arial, Helvetica, sans-serif; color:#fff;  text-transform: none; font-weight: normal; border-bottom: 1px solid #303437;background: transparent url(https://halo.bungie.net/images/base_struct_images/contentBg/tableheadergradient.jpg) repeat-x;}
+	.boxD p { margin: 10px 0 0 10px; display: block; float: left; }
+	.boxD ul { margin: 0; list-style-type: none; }
+	.boxD ul li { float: left; font-size:12px; line-height: 15px; }
+
+.sContentpopup h1 { display: none; }
+
+.community_colB .spotlight_career { width: 892px; height: 90px; margin: auto; padding: 4px 0 0 10px; list-style: none; background: #000 url(https://halo.bungie.net/images/base_struct_images/contentBg/communityfilesgradient.jpg) repeat-x left top; }
+.community_colB .spotlight_career h1{padding:4px 0 0 0;}
+
+ul.link_list { padding: 0; width:800px; height:35px;  list-style-type: none; float:left; line-height:35px; }
+ul.link_list li { display:inline; float:left; margin-right:10px; font: 12px/35px Arial, Helvetica, sans-serif;}
+ul.link_list li a.social_link { line-height: 35px;}
+ul.link_list li.settings_msg { margin:0 0 35px 10px;  }
+
+
+ul.pagination {padding-top:4px;}
+
+/* Message Popover */
+.message_popover_overlay { z-index: 2000; position: fixed; top:50%; bottom:50%;left:50%;right:50%;  float: none;  }
+.message_popover_cont {	border: solid 2px #4b4b4b; width: 398px; position: relative; margin: -100px 0 0 -201px; padding: 0; clear: both; } 
+
+.message_popover { width: 396px; border: solid 1px #000; background: #000; } 
+.message_popover .heading { padding: 0 0 2px 9px; text-align:left; font-size: 24px;line-height: 32px; color: #fff; font-weight: normal; position: relative; } 
+.message_popover .heading img { position: absolute; right: 5px; top: 5px } 
+.message_popover .table_cont { width: 205px; height: 45px; padding: 0 0 0 10px; float: left; } 
+.message_popover table { border-collapse: collapse; width: 205px; margin: 0; padding: 0; font-weight: normal; color: #fff; table-layout: fixed; } 
+.message_popover table td span.zeroslots { color: #ff2200; }
+
+.message_popover .memory_cont { padding: 10px 0 0 0; width: 181px; height: 35px; float: left; } 
+.message_popover .memory_meter { width: 170px; height: 25px; background: #1f5fa3; position: relative; } 
+.message_popover .memory_meter .memory { height: 25px; float: left; background-color: #339; } 
+.message_popover .memory_text { display: block; line-height: 25px; padding: 0 0 0 6px; position: absolute; font-weight: normal; color: #fff; }
+
+.message_popover .error_pic { height: 100px; width: 100px; float: left; } 
+.message_popover .error_message_cont {text-align:left; background: #fff; float: left; height: 88px; width: 280px; color: #000; padding: 12px 0 0 12px; padding-right:4px; font-weight: normal; } 
+.message_popover .error_heading {text-align:left; font-size: 16px; font-weight: bold; padding: 0 0 10px 0; }
+
+.message_popover ul { margin: 0; padding: 10px 0 10px 0; float: left; } 
+.message_popover ul li { display: block; float: left; padding: 0 0 0 8px; } 
+
+.message_popover_cont .message_popover a { color: #3366ff; text-decoration: none; }
+.message_popover_cont .message_popover a:hover { color: #3366ff; text-decoration: underline; }
+.message_popover_cont .message_popover a:visited { color: #3366ff; text-decoration: none; }
+.message_popover_cont .message_popover a:active { color: #3366ff; text-decoration: none; }
+.message_popover a.bt_ok { width: 85px; height: 30px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/messages/ok.gif) no-repeat; background-position: 0 0; } 
+.message_popover a.bt_ok:hover { background-position: 0 -30px; }
+.message_popover a.bt_service_record { width: 286px; height: 30px; float: left; background: url(https://halo.bungie.net/images/base_struct_images/messages/servicerecord.gif) no-repeat; background-position: 0 0; } 
+.message_popover a.bt_service_record:hover { background-position: 0 -30px; }
+.message_popover_cont .message_popover .error_message_cont a { color: #3366ff; text-decoration: none;} 
+.message_popover_cont .message_popover .error_message_cont a:hover { color: #3366ff; text-decoration: underline;} 
+.message_popover_cont .message_popover .error_message_cont a:visited { color: #3366ff; text-decoration: none;} 
+.message_popover_cont .message_popover .error_message_cont a:active { color: #3366ff; text-decoration: none;} 
+
+.page_overlay {width:100%;height:100%;position:fixed;z-index:1001;top:0;left:0;right:0;bottom:0; background-color:Black; opacity:0.55; -moz-opacity:0.55;}
+
+.content_ratings_history {  height: 100%; padding: 15px 0 10px 0; clear: both; }
+
+div.list-j { margin: 0; }
+div.list-j ul.pagination { list-style-type: none; margin: 0; padding: 0px 10px 4px 15px; color: #222; background: none; }
+div.list-j ul.pagination li { font-size: 11px/11px; font-weight: bold; color:#000; display: inline; text-align: left; margin: 0; padding: 0; }
+div.list-j ul.pagination li.chunk {color:#fff; display: inline; text-align: left; margin: 0; padding: 0 4px 0 4px; }
+div.list-j ul.pagination li a { display: inline; margin: 0; padding: 0; }
+div.list-j ul.pagination li a.page { text-decoration: none; display: inline; margin: 0; padding: 2px 4px 2px 4px; border: none; } 
+div.list-j ul.pagination li a.page:hover { border: #71caef solid 1px; padding: 1px 3px 1px 3px; }
+div.list-j ul.pagination li img {display: inline; margin: 0; padding: 0; }
+div.list-j ul.pagination li.selected { display: inline; margin: 0; padding: 2px 4px 2px 4px; background: #EEEEEE; border: #787878 solid 1px;}
+div.list-j ul li.direction {font-size: 11px; font-weight: bold; color:#222; display: inline; text-align: left; margin: 0; padding: 0; }
+div.list-j ul li.direction a {display: inline; margin: 0; padding: 0; }
+div.list-j h5 { margin: 0; padding: 4px 0 2px 15px; color: #fff; background: #203660; }
+div.list-j h6 { margin: 0; padding: 0 0 4px 15px; color: #fff; background: #203660; }
+div.list-j h6.new { font-size: 10px; color: #fff; font-weight: bold; font-style: normal; margin:0; padding: 0; }
+
+.job_block_hdr { margin:5px 15px 0px 15px;  height:38px; border-bottom:solid 2px #5b5b5b; padding-bottom: 5px;}
+.job_block_hdr a { float:right; margin:12px 0 0 0; }
+.job_block_hdr img { float:left;}
+
+.text_small_news { font: 16px/18px Arial, Helvetica, sans-serif; color: #fff;  margin:5px 0 0 10px;  }
+.news_date {width:130px;}
+
+.job_nav {margin: 8px 7px 7px 7px;}
+.category_nav {margin: 8px 0 7px 8px; overflow:hidden;}
+.history_main { background-color: #1e1e1e; width: 603px; margin: 0; padding: 0; color: #bbb; float: right; }
+
+.news_main { background-color: #1e1e1e; width: 590px; margin: 0; padding: 0;  float: left; }
+.news_block { width: 700px; margin:0 15px; padding: 0; float:left; margin-left:10px;}
+.news_block a { font-size: inherit; line-height: inherit;}
+.news_side_nav { width: 165px; margin: 0; padding: 0;}
+.news_discuss_link {background:url(https://halo.bungie.net/images/base_struct_images/news/discussion.gif) center left no-repeat; text-align:center;padding:0 0 0px 28px; white-space:nowrap;}
+.news_viewall_link {background:url(https://halo.bungie.net/images/base_struct_images/news/alltopnewsarrow.gif) center right no-repeat; text-align:center;padding:0 21px 0 0px;white-space:nowrap; font-size:12px;}
+.news_perma_link {background:url(https://halo.bungie.net/images/base_struct_images/news/permalink.gif) center left no-repeat; text-align:center;padding:0  0 0px 13px;white-space:nowrap;}
+
+.panelbar {display:inline;}
+
+div.col.news_main { width: 730px; overflow: visible; height:auto;background: none;}
+.news_block .newsStoryBody { margin-right: 10px !important;height: auto; width: auto; font-size: 13px; line-height:20px; padding-bottom:0.5em; }
+
+.digg_link {background:url(https://halo.bungie.net/images/base_struct_images/news/digg.gif) bottom left no-repeat;text-align:center; padding:0 0 0 25px; white-space:nowrap;}
+.media_age_gate {width:703px;height:480px;display:block;background:url(https://halo.bungie.net/images/base.jpg) center;}
+.media_overlay {width:703px;height:480px;position:absolute;z-index:1001; background-color:#111; opacity:0.55; -moz-opacity:0.55; filter:alpha(opacity=55);}
+.media_link { display: block; height:55px; width:325px; background:#111; position:absolute; border:solid 1px #999; z-index:1001; margin:150px 0 0 165px;padding:10px; }
+.media_age {margin-top:5px;}
+.media_link img { float:left; padding-right:15px; }
+.media_pad {padding:15px 28px 15px 28px;  z-index:0;  }
+.media_back { background:url(https://halo.bungie.net/images/base_struct_images/news/mediaplayergradient_high.jpg);}
+
+ul.legend li{font: 8pt Arial, Helvetica, sans-serif;color: #FFF;}
+ul.legend li.whatThis{font: 7pt Arial, Helvetica, sans-serif;margin-left:2px;}
+
+.slotWrap{width:300px;float:left;background:transparent;margin:0 0 10px 0; }
+.slotWrap .user_content_mini_outer_shell .spam_box .infoA li{font-size:9px;width:260px;white-space:normal;}
+
+.community_hub ul li a.editLink{position:relative;right:-245px;top:-43px;background:transparent;font: 10px Arial, Helvetica, sans-serif; color:#71CAEF;}
+
+div.moreSideNav{width:256px;}
+.moreSideNav div.block-a h2{height:22px;width:auto;}
+.moreSideNav .block-b{float:left;margin:0;}
+	.moreSideNav div.block-b h2{width:240px;padding:8px 0 0 15px;height:28px;}
+.moreSideNav ul.arrow2 li{margin-bottom:10px;}
+
+/* dock object */
+div.silverlight_dock_block { float: left; width: 100%; }
+div.silverlight_dock_block img { padding: 0; margin: 0; }
+div.silverlight_dock_object { display: none; background: none; }
+div.silverlight_dock_object div.media_age_gate { display: none; }
+span.silverlight_container { display: none; }
+ul.silverlight_dock_save { float: right; width: 450px; text-align: right; margin-top: 15px; margin-right: 25px;}
+ul.silverlight_dock_save li { float: left; display: inline; margin-left: 10px; color: #bbbbbb; font-family:Arial,Helvetica,sans-serif; font-size:12px;}
+
+/*Safari Custom Exceptions */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	div.user_content_mini_outer_shell .spam_box ul li { line-height: 12px; }
+	ul.link_list li a.social_link {float: left; margin-bottom: 0; line-height: 35px;}
+	ul.rendered_videos_order_summary li.right {top:0px;}
+	.history_block { margin:0 -14px 0 0;}
+	div.colLast div.block-b div.messagebg div.forumpost div.messagebody { float: left; }
+}
+
+
+/* remodeled */
+.fileShare_tagsSearch{width:880px;margin:0 0px 0px 11px;border-bottom:1px solid #6c7079;float:left;line-height:18px;padding:0;}
+	.fileShare_tagsSearch ul{ list-style-type: none; margin: 0; display: block; padding:20px 0 10px;}
+		.fileShare_tagsSearch ul li{display: inline;}
+	.fileShare_tagsSearch ul.left{float:left;}		
+		.fileShare_tagsSearch ul.left li{padding-right: 4px; }
+	.fileShare_tagsSearch ul.right{float:right;white-space:nowrap;}
+		.fileShare_tagsSearch ul.right li{padding-left: 4px;}
+	.fileShare_tagsSearch p.left{margin:0;float:left;padding:20px 0 10px;}
+	.fileShare_tagsSearch fieldset{border:0;margin:0;padding:0;}
+	.fileShare_tagsSearch fieldset ul.left{padding:4px 0 0 0;}
+		.fileShare_tagsSearch fieldset ul.left li{line-height:35px;}
+			.fileShare_tagsSearch fieldset ul.left li.sortLabel{width:281px;color:#bbb;}
+			.fileShare_tagsSearch ul.left li select{margin-right:4px; width:170px;}
+	/* used with BungieProRenderMinuteDisplay.ascx */
+	.fileShare_tagsSearch ul.left.bpro li  {padding-right: 10px;float: left;}
+	.fileShare_tagsSearch ul.left.bpro li  {line-height: 30px; }
+	.fileShare_tagsSearch ul.left.bpro li  a:hover {text-decoration: none;}
+	.fileShare_tagsSearch ul.right.bpro li {float: left; padding-left: 10px;}
+	.fileShare_tagsSearch ul.right.bpro li a {width: 162px; height: 24px; display:block; background: url(https://halo.bungie.net/images/base_struct_images/bluebutton.jpg) no-repeat top left; line-height: 24px; padding-left: 10px;}
+	.fileShare_tagsSearch ul.right.bpro li a:hover { background-position: bottom left; text-decoration: none;}
+
+/* BungieProRenderMinuteDisplay */
+div.sContent div.infopopup { display: none; position:absolute; width: 240px; height: auto; background: url(https://halo.bungie.net/images/base_struct_images/infopopupback.png); border: 1px solid #4d4d4d; margin-left: 95px; margin-top: 20px; padding: 12px; z-index: 12;}
+div.sContent div.infopopup div.bluecircle { display: block; float: left; color: #71caef; background:url(https://halo.bungie.net/images/base_struct_images/bluering.gif) no-repeat top left; width: 28px; height: 21px; text-align: center; font-size: 12px; padding-top: 7px;}
+	div.sContent div.infopopup div.plus{background-image: none; margin-top: -20px;background:none;}
+div.sContent div.infopopup h4 { width: 190px; float: right; margin: 0; color: white; font-size: 12px; line-height: 28px;}
+div.sContent div.infopopup p { width: 190px; margin-left: 0; float: right; clear: both; color:#989898; font-size: 10px; line-height: 10px;}
+div.sContent div.infopopup .rule{border-bottom: 2px solid #fff; width: 100%; height: 2px; display: block; float: left;margin-bottom: 10px;}
+.totalMinutesAvailable a{background: url(https://halo.bungie.net/images/base_struct_images/bluering.gif) no-repeat top left; display: block; overflow: hidden; text-align: center; height:28px; width:28px; line-height:28px;}
+
+.bpro.box { background: url(https://halo.bungie.net/images/halo3stats/boxy-back-1.gif) top left no-repeat; display: block; height: 40px; width: 219px; margin-top: 10px; padding-top:10px; float: left;}
+	.bpro.box a { display: block; width: 197px; height: 32px; line-height: 32px; background: url(https://halo.bungie.net/images/halo3stats/button-back.gif) no-repeat top left; margin-left: 10px; text-align: left; font-size: 12px;}
+		.bpro.box a:hover { text-decoration:none;}
+		.bpro.box a span{ width: 197px; height: 21px; background: url(https://halo.bungie.net/images/base_struct_images/stats/rightcol-icons.gif) no-repeat top left; padding-left: 28px; margin-left: 3px; padding-top: 5px; white-space: nowrap;}
+
+.bpro.content { background: url(https://halo.bungie.net/images/halo3stats/boxy-back-2.gif) top left #000 no-repeat; display: block;  width: 219px; float: left;}
+	.bpro.content ul { list-style: none; float: left; width: 194px; margin-left: 10px; margin-top: 5px; margin-bottom: 10px;}
+	.bpro.content ul li { float: left; height: 30px; line-height: 30px; color: white; font-size: 11.5px; text-indent: 3px;}
+	.bpro.content ul li.bluecircle{ display: block; height:28px; width: 28px; background: url(https://halo.bungie.net/images/base_struct_images/bluering.gif) no-repeat top left; text-align: center; line-height: 28px; text-indent: 0; color: #71CAEF; }
+		.bpro.content ul li.bluecircle a { line-height:inherit; }
+	.bpro.content ul li.value{ float: right;}
+		.bpro.content a.navbutton { float: left; display:block; background: url(https://halo.bungie.net/images/base_struct_images/stats/bigbluebutton.jpg) no-repeat top left; height: 24px; width: 192px; margin-left: 10px;  margin-bottom: 10px; line-height: 24px; padding-left: 10px;}
+		.bpro.content a.navbutton:hover { background-position: left bottom; text-decoration: none;}
+
+/* CommunityTagSearchUI */
+.community_colB .matte_career:first-child { padding: 0; width: 902px; height:50px; border-bottom: 2px solid #353535; background:none;}/*wraps CommunityTagSearchUI - the other .matte_career divs on the account pages are not a first-child*/
+
+.nav_control_long_tagadd .search-input-wrapper, .nav_control_long_tagsearch .search-input-wrapper{float:left;}
+.nav_control_long_tagadd .search-btn-wrapper, .nav_control_long_tagsearch .search-btn-wrapper{float:right;  padding:2px 0 0 0;}
+.nav_control_long_tagsearch{width:882px;height:auto;white-space:nowrap;margin:10px 0 10px 0; padding:5px 0 0px 10px;display:block;clear:both;}
+
+ul.tagSearch_suggestions { width: 98%; list-style-type: none;height:17px; margin:2px 0 0 0; padding:0 0 0 7px; }
+	ul.tagSearch_suggestions li { width: 27%; float:right; color:#eee;height:17px;overflow:hidden; }
+		ul.tagSearch_suggestions li a {height:17px; line-height:18px; text-align:left; }
+	ul.tagSearch_suggestions li.suggestion_term { width: 44%; float:left; }
+
+/* game viewer */
+.mapframe h4 { float:left;padding-left:5px; width: auto;} 
+.mapframe .F5Ad_cont { float:right;padding:5px; } 
+.mapframe .email_map { float:right;padding-top:10px;} 
+.mapframe .email_map p { line-height: 15px;padding-right:10px;} 
+.mapframe .links { float:right;padding-top:10px;margin-right:20px; } 
+.mapframe .player_list { float: left; } 
+.mapframe .image_matteA { padding: 2px; float:left; width:30px; text-align: center; } 
+.mapframe .image_matteB { padding: 2px; float:left; width:30px; text-align: center; background-color:#666666; } 
+.mapframe .dummy_img { float: left; height: 20px; width: 20px; } 
+.mapframe .linkBt_cont { float: left; margin: 4px 0 0 10px; } 
+.mapframe .map { float: right; } 
+.mapframe .map_thumbs { margin-left:10px; } 
+.mapframe .iframe_spacer { height: 850px; clear: both; }
+
+/* utility popups */
+div.nav ul.utilitypopup { height: 80px; margin: 0 0 0 20px; padding: 4px 0 4px 0; text-align: right; }
+div.nav ul.utilitypopup li { display: inline; }
+div.nav ul.utilitypopup li a { display: inline; vertical-align: middle; margin: 4px 0 0 4px ;} 
+div.nav ul.utilitypopup li a img.top_logo_bungie{left:16px;}
+
+/* survey notification */
+.surveyNotification
+{
+    line-height:28px;
+    height:28px;
+    padding:0 15px;
+    border-bottom:2px solid #000;
+    
+    width:100%;
+    clear:both;
+    text-align:center;
+    background:url(https://halo.bungie.net/images/account/bg_notificationBar2.png) repeat-x;
+}
+.bgRepeat .surveyNotification
+{
+    background:url(https://halo.bungie.net/images/account/bg_notificationBar.png) repeat-x;
+    line-height:28px;
+    height:28px;
+    text-align:right;
+    padding:0 15px;
+    width:872px;
+    border-bottom:2px solid #000;
+ }
+    .surveyNotification span{float:left;height:28px;line-height:28px;color:#dd8f51;font-size:14px;}
+    .surveyNotification span a{display:inline-block;padding-right:12px;margin-left:5px;background:url("https://halo.bungie.net/images/base_struct_images/contentBg/profile-link-arrow.png") no-repeat scroll right center transparent;}
+    .surveyNotification a.close{font-size:12px;line-height:28px;}
+        .surveyNotification a.close em{font-style:normal;position:relative;top:1px;margin-left:5px;}
+
+
+
+/* marked for deletion : old nav
+div.passport_page div.nav {  width: 902px; margin: 0;}
+div.nav h2 { display: none; }
+div.nav .utility_cont {  }
+div.nav ul.utility_cardless { height: 80px; margin: 0; padding: 4px 0 0 0; list-style-type: none;  border-bottom: 2px solid #7e8083; }
+div.nav ul.utility_cardless li img { display: inline; vertical-align: middle; margin: 0; }
+div.nav ul.utility { height: 80px; margin: 0; padding: 6px 0px 0 0; text-align: right; list-style-type: none; border: none; width: 400px; float: right;}
+div.nav ul.utility li {display: inline; margin: 0 15px 0 0px; color: #999; }
+
+div.nav ul.utility li img { display: inline; vertical-align: middle; margin: 0; } 
+div.nav ul.utility li.signupText { display: block; margin-bottom:5px; }
+div.nav ul.utility_b { height: 80px; margin: 0; padding: 4px 0 0 0; text-align: right; list-style-type: none; border: none; width: 400px; position: absolute; top: 0px; right: 0px; }
+div.nav ul.utility_b li { display: inline; margin: 0 8px 0 0px; color: #999; }
+div.nav ul.utility_b li img { display: inline; vertical-align: middle; margin: 0; } 
+div.nav ul.utility_b li.signupText { display: block; margin-bottom:5px; }
+div.nav ul.utility_c { height: 80px; margin: 0; padding: 4px 0 0 0; text-align: right; list-style-type: none; border: none; width: 400px; position: absolute; top: 0px; left: 220px; }
+div.nav ul.utility_c li { display: inline; margin: 0 8px 0 0px; color: #999; }
+div.nav ul.utility_c li img { display: inline; vertical-align: middle; margin: 0; }
+div.nav ul.utility_c li.signupText { display: block; margin-bottom:5px; }
+
+div.nav ul.navButtons { height: auto;  margin: 0; padding: 0; } 
+div.nav ul.navButtons li { float: left; list-style-type: none; margin: 0; padding: 0; } 
+
+div.nav ul.navButtons li.navSearch .search-div {height:20px; margin:5px 0 0 0; }
+div.nav ul.navButtons li.navSearch .navSearchTextbox {width: 210px; height:20px; vertical-align:top; margin: 0; padding: 0 0 0 5px; line-height:16px; border:none 0px #fff;  }
+
+
+div.nav div.live_header { width: 238px; padding: 2px 0 2px 18px; float: right; color: #bbb; font-size: 11px; }
+*/
+
+
+
+/* marked for deletion  -  doesn't exist 
+.contentB  .oversection_header { margin: 0; width:322px; text-align: center; }
+
+.contentB .halo3 { margin: 0; padding: 5px 5px 10px 10px; width: 285px; float: left; overflow: hidden;   }
+.contentB .halo3 .profile { margin: 0; padding: 0; height: 100px; overflow: hidden; border-top: solid 1px white; border-left: solid 1px white; border-right: solid 1px white; }
+.contentB .halo3 .profile .pic1 { float: left; margin: 0; padding: 5px 0 5px 0; }
+.contentB .halo3 .profile .pic2 { float: right; margin:0px; padding: 5px 0px 5px 0; }
+.contentB .halo3 .profile .info { width: 120px; margin: 0; padding: 5px 0 0 5px; float: left; color: White; font: bold 12px Arial, Helvetica, sans-serif; }
+.contentB .halo3 .profile .info ul { list-style: none; margin: 0; padding: 0; }
+.contentB .halo3 .profile .info ul li { margin: 0; padding: 0; line-height: 125%; }
+.contentB .halo3 .profile .info ul li.larger { font: bold 14px Arial, Helvetica, sans-serif; }
+.contentB .halo3 .profile .games_played { padding: 30px 0 0 0; margin: 0;  }
+
+.contentB .halo3 .medals { margin: 0; padding: 0; height: 70px; background-color: #040608; overflow: hidden; border-left: solid 1px white; border-right: solid 1px white; border-bottom: solid 1px #393a3b;  }
+.contentB .halo3 .medals ul { margin: 0; padding: 0; list-style: none; }
+.contentB .halo3 .medals ul li {margin: 0; padding: 0; display: inline; }
+.contentB .halo3 .medal_img { margin-top: -2px; padding: 0 0 0 10px; float: left; }
+
+.contentB .halo3 .achievements { margin: 0; padding: 0; height: 70px; background-color: #040608; overflow: hidden; border-left: solid 1px white; border-right: solid 1px white;  border-bottom: solid 1px #393a3b;  }
+.contentB .halo3 .achievements ul { margin: 0; padding: 0; list-style: none; }
+.contentB .halo3 .achievements ul li {margin: 0; padding: 0; display: inline; }
+.contentB .halo3 .achievements_img { margin-top: -2px; padding: 0 0 0 10px; float: left; }
+
+.contentB .halo3 .campaign { margin: 0; padding: 0; height: 125px; background-color: #040608; overflow: hidden; border-left: solid 1px white; border-right: solid 1px white;  border-bottom: solid 1px #393a3b;  }
+.contentB .halo3 .campaign img { margin: 0; padding: 5px; float: left; }
+.contentB .halo3 .campaign .campaign_info {margin: 0; padding: 5px 0 0 5px; color: White; float: left;  } 
+
+.contentB .halo3 .played { margin: 0; padding: 0; height: 130px; overflow: hidden; border-left: solid 1px white; border-right: solid 1px white; border-bottom: solid 1px white;  }
+.contentB .halo3 .played img { float: left; padding: 5px; }
+.contentB .halo3 .played .played_info { margin: 0; padding: 10px 0 0 5px; color: White; float: left; } 
+.contentB .halo3 .played ul { margin: 0; padding: 0; list-style: none; float: left;}
+.contentB .halo3 .played ul li { margin: 0; padding: 0;}
+.contentB .halo3 .played ul li.larger { font: bold 12px Arial, Helvetica, sans-serif; }
+.contentB .halo3 .played .place { margin: 0; padding: 20px 0 0 5px; width: 150px; float: left; color: White;  }
+
+.contentB .halo3bg {background-color:#131415;}
+.contentB .halo2 { margin: 0; padding: 5px 5px 10px 10px; width: 285px; float: left; overflow: hidden;  }
+.contentB .halo2 .profile { margin: 0; padding: 0; height: 100px; overflow: hidden; border: solid 1px #494a4b;  }
+.contentB .halo2 .profile .pic1 { float: left; margin: 0; padding: 5px 0 5px 10px; }
+.contentB .halo2 .profile .pic2 { float: right; margin: 0; padding: 5px 5px 0px 5px; }
+.contentB .halo2 .profile .info { width: 140px; margin: 0; padding: 5px 0 0 5px; float: left; color: White; font: bold 12px Arial, Helvetica, sans-serif;  }
+.contentB .halo2 .profile .info ul { list-style: none; margin: 0; padding: 0; }
+.contentB .halo2 .profile .info ul li { margin: 0; padding: 0px 0px 3px 0px; line-height: 125%; }
+.contentB .halo2 .profile .info ul li.larger { font: bold 12px Arial, Helvetica, sans-serif; }
+.contentB .halo2 .profile .games_played { padding: 10px 0 0 0; margin: 0;  }
+
+.contentB .noprofile {width: 590px; padding:5px;}
+*/
+
+/* marked for deletion : does not exist??? 
+.screenshot_viewer .cols { margin: 0; padding: 0; width: 100%; } 
+.screenshot_viewer .cols .col { margin: 0; padding: 0; width: 100%; } 
+.screenshot_viewer .cols .col .block-a { margin: 0; padding: 0; width: 100%; } 
+.screenshot_viewer .cols .col .block-a h2 { width:100%; min-width: 300px; background: none; border-top: solid 2px #7e8083; border-bottom: solid 1px #7e8083; }  
+.screenshot_viewer .cols .col .block-a .controls_container { width: 400px; margin: 10px 0 0 20px; } 
+.screenshot_viewer .cols .col .block-a .controls_container .controls { float: left; margin: 0 50px 20px 0; } 
+.screenshot_viewer .cols .col .block-a .controls_container .controls h4 { margin:0; padding: 0; } 
+.screenshot_viewer .cols .col .block-a .controls_container .utility { list-style-type:none; margin: 0; padding:0; float: left; } 
+.screenshot_viewer .cols .col .block-a .controls_container .utility li.previous { float: left; margin:0; padding: 0; } 
+.screenshot_viewer .cols .col .block-a .controls_container .utility li.next { float: left; margin: 0 0 0 8px; padding: 0; } 
+.screenshot_viewer .cols .col .block-a .controls_container .utility li.previous a:hover { text-decoration:none; } 
+.screenshot_viewer .cols .col .block-a .controls_container .utility li.next a:hover {  text-decoration:none; } 
+.screenshot_viewer .cols .col .block-a .image_summary { text-align:center; min-width: 150px; } 
+.screenshot_viewer .cols .col .block-a .image_summary h5 { margin: 10px 0 0 0; padding: 0; }
+*/
+
+/* marked for deletion : doesnt exist
+
+*/
+
+/* marked for deletion : doesn't exist 
+div.navblock_right {width:191px;float:right; position:relative; z-index:100; margin:-255px 0 0 0; padding: 0;}
+div.navblock_right .all_link { padding:0 0 0 37px; background-color: none; }
+div.navblock_right ul { margin: 0; padding: 0; height:215px; list-style: none;}
+div.navblock_right ul li { margin: 0; padding: 14px 0 0 14px; width:179px; height: 33px;  float:left;}
+div.navblock_right ul li.list_last { margin: 0; padding: 0; width:191px; height: 40px;  float:left;}
+
+div.topNewsNav h5 { margin: 0; height:40px; padding: 15px 10px 0 0; float: right; font: small-caps 12px Arial, Helvetica, sans-serif;}
+div.topNewsNav h5 a {color: #71caef; text-decoration: none;} 
+div.topNewsNav h5 a:hover { color: #fff; text-decoration: underline; }
+*/
+/* marked for deletion : doesn't exist 
+div.file_item_outer_shell {width: 587px; font: 11px Arial, Helvetica, sans-serif; position: relative; margin: 0 0 5px 0; }
+div.file_item_outer_shell ul.spam_collapse_bar { background-color: #27282C; margin: 0 0 0 10px; padding: 4px 2px 0px 6px;  height: 20px; border: solid 1px #5f6062; }
+div.file_item_outer_shell ul.spam_collapse_bar li { float: left;  list-style-type: none; }
+div.file_item_outer_shell ul.spam_collapse_bar li.right { float: right; }
+div.file_item_outer_shell ul.spam_collapse_bar li a.expanded_arrows_collapsed { top: -2px; margin: 0; padding: 0; position: relative; display: block; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/plusminus.gif) left top; }
+div.file_item_outer_shell ul.spam_collapse_bar li a.expanded_arrows_collapsed:hover { background: url(/images/base_struct_images/linkBt/plusminus.gif) left 40px; }
+div.file_item_outer_shell ul.spam_collapse_bar li a.expanded_arrows_expanded { top: -2px; margin: 0; padding: 0; position: relative; display: block; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/plusminus.gif) left 60px; }
+div.file_item_outer_shell ul.spam_collapse_bar li a.expanded_arrows_expanded:hover { background: url(/images/base_struct_images/linkBt/plusminus.gif) left 20px; }
+
+
+
+.screenshot_box { width: 587px; border: solid 2px #707070; margin: 0 auto 0 auto; }
+.screenshot_box_inner { width: 585px; background: #464646; border: solid 1px #000; }
+.screenshot_box .screenshot_box_inner div.trophy { display: block; width: 585px; height: 17px; float:left; clear: both;}
+.screenshot_box .screenshot_box_inner div.trophy a { background: #2a2a2a; padding: 10px 15px 10px 5px; }
+.screenshot_box .screenshot_box_inner div.trophy a img { vertical-align: text-top; }
+.screenshot_box .screenshot_box_inner div.trophy span { padding-left: 10px; }
+.screenshot_box .screenshot_box_inner h4 { display: block; width: 585px; height: 25px; background: #2a2a2a; font: 12px/25px Arial, Helvetica, sans-serif; text-transform:none; clear: both; float:left; }
+.screenshot_box .screenshot_box_inner h4.empty {  background: #464646; color: #c0c0c0;  }
+.screenshot_box img.screenshot_pic_link { width: 160px; height: 90px; float: left; background-color: Black; }
+.screenshot_box img.screenshot_pic { width: 160px; height: 90px; float: left; border-right: solid 2px #606060; }
+.screenshot_box ul.infoA { margin: 0; padding: 5px 0 0 5px; width: 230px; float: left; list-style-type: none; overflow: hidden; word-wrap: break-word; }
+.screenshot_box ul.infoA li { font-size: 12px; line-height: 15px; }
+.screenshot_box ul.infoA li h3 {  font: bold 14px/17px Arial, Helvetica, sans-serif; text-transform: none; margin: 0 0 .5em 0; background-color: Transparent; padding: 0; border: none;}
+.screenshot_box ul.infoA li a { display: block; margin-top: 1em; }
+.screenshot_box ul.infoA li h3 a { font: bold 14px/17px Arial, Helvetica, sans-serif; text-transform: none; margin: 0 0 .5em 0; background-color: Transparent; padding: 0; border: none; display:block; background-image: none; } 
+.screenshot_box div.infoB { margin: 0; padding: 5px 0 0 0; width: 170px; float: right; list-style-type: none; }
+.screenshot_box div.infoB p { margin: 0 }
+.screenshot_box .top { display: block; width: 585px; clear: both; height: 25px; background: #2a2a2a; border-bottom: solid 1px #606060; font: 12px/25px Arial, Helvetica, sans-serif; }
+.screenshot_box .top ul { list-style-type: none; margin: 0; padding: 0;  float: left; }
+.screenshot_box .top ul li { float: left; padding: 0 0 0 6px; font: 12px/25px Arial, Helvetica, sans-serif; }
+.screenshot_box .top ul li.first { line-height: 0; padding: 1px 0 0 0; }
+.screenshot_box .screenshot_box_inner div.top_fs { display: block; width: 585px; clear: both; height: 25px; background: #000; border-bottom: solid 1px #606060; font: 12px/25px Arial, Helvetica, sans-serif; background: url(/images/base_struct_images/stats/fileshare-header-gradient.jpg) repeat-x top left; }
+.screenshot_box .screenshot_box_inner div.top_fs span.fs_item_header { font-weight: bold; padding-left: 5px; }
+.screenshot_box .screenshot_box_inner div.top_fs_empty {display: block; width: 585px; clear: both; height: 25px; font: 12px/25px Arial, Helvetica, sans-serif; background: #464646; color: #c0c0c0; }
+.screenshot_box .infoB ul.rating_box { list-style-type:none; margin: 5px 0 3px 0; padding: 0; width: 148px; height: 30px; border: solid 1px #818181; }
+.screenshot_box .infoB ul.rating_box li { width: 20px; height: 20px; margin: 5px 0 0 8px; float: left; display: inline; } 
+.screenshot_box .infoB ul.rating_box li a { display: block; }
+.screenshot_box .infoB ul.rating_box li a.rating_star_on { background: transparent url(/images/base_struct_images/online/septagons.gif ) no-repeat left top; }
+.screenshot_box .infoB ul.rating_box li a.rating_star_off { background: transparent url(/images/base_struct_images/online/septagons.gif) no-repeat left center; }
+.screenshot_box .infoB ul.rating_box li a.rating_star_on:hover { background: transparent url(/images/base_struct_images/online/septagons.gif ) no-repeat left bottom; }
+.screenshot_box .infoB ul.rating_box li a.rating_star_off:hover { background: transparent url(/images/base_struct_images/online/septagons.gif ) no-repeat left bottom; }
+.screenshot_box .bottom { display: block; width: 585px; clear: both; background: #2a2a2a; border-top: solid 1px #606060; font: 12px/25px Arial, Helvetica, sans-serif; } 
+.screenshot_box .bottom .timestamp { font-style: italic; float: left; padding: 0 0 0 5px }
+.screenshot_box .bottom ul.links { float: right; list-style-type: none; margin: 0; padding: 0 25px 0 0; position:relative; }
+.screenshot_box .bottom ul.links li { float: left; font-size: 12px; line-height: 25px; }
+.screenshot_box .bottom ul.links li a.expanded_arrows_collapsed { position: absolute; margin: 3px 0 0 2px; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/expandedarrows.gif) left top; }
+.screenshot_box .bottom ul.links li a.expanded_arrows_collapsed:hover { position: absolute; margin: 3px 0 0 2px; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/expandedarrows.gif) left 40px; }
+.screenshot_box .bottom ul.links li a.expanded_arrows_expanded { position: absolute; margin: 3px 0 0 2px; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/expandedarrows.gif) left 60px; }
+.screenshot_box .bottom ul.links li a.expanded_arrows_expanded:hover { position: absolute; margin: 3px 0 0 2px; width: 21px; height: 20px; background: url(/images/base_struct_images/linkBt/expandedarrows.gif) left 20px; }
+.screenshot_box .bottom_dropdown ul.links { float: right; list-style-type: none; margin: 0; padding: 0; position:relative; }
+.screenshot_box .bottom_dropdown { display: block; width: 585px; clear: both; height: auto; background: #2a2a2a; font: 12px/25px Arial, Helvetica, sans-serif; } 
+.screenshot_box .bottom_dropdown ul.links li { font-size: 12px; line-height: 14px; float: none; }
+*/
+
+
+
+/* marked for deletion : doesn't exist 
+.profile_strip div.profile_body {float:left;width: 395px; padding: 3px 0px 0 0px; float:left; margin:0;}
+.profile_strip div.profile_body div.hr {padding:0; margin:5px 0 5px 0;width:100%; height:5px; border-bottom: solid 1px #555555;}
+.profile_strip div.profile_body div.mmData {float:left;}
+.profile_strip div.profile_body ul.data { list-style-type:none; margin: 0; padding: 0; width: 100%; float: left;}
+.profile_strip div.profile_body div.mmData ul { list-style-type:none; width:175px; margin: 0; padding: 0; }
+.profile_strip div.profile_body ul li { display:inline; float:left; width: 125px; font: 12px/18px Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+.profile_strip div.profile_body ul li.values { float:left; width: 50px; text-align: left; margin: 0; padding: 0; }
+.profile_strip div.profile_body ul li.values_r { float:left; width: 75px; text-align: right; margin: 0; padding: 0; } 
+.profile_strip div.profile_ratings { padding: 0px 10px 0 0px;float:right; margin: 0;}
+
+
+
+
+
+
+table.profile_strip_tableA { padding: 5px 0 10px 0; float: left; width: 200px; color: #fff; }
+table.profile_strip_tableA td.fields{width: 80px; }
+table.profile_strip_tableB { margin: 5px 0 10px 0; float: right; width: 200px; table-layout: fixed; }
+table.profile_strip_tableB td.values {  }
+table.profile_strip_tableB td.header{ font: 14px/15px Arial, Helvetica, sans-serif; color:#eee;}
+*/
+
+/* marked for deletion :  doesn't exist
+ul.achievement_list { width:602px; list-style-type: none; margin:0 0 0 20px;}
+ul.achievement_list li {background:#1E1E1E;width:592px; margin: 0; padding:0; border: solid 1px #666;}
+ul.achievement_list li h3 { margin: 0; font-weight:normal; font-size: 16px; line-height: 20px; text-transform: none; color:#fff;  }
+.achievements_cont_vert { float: left; }
+.achievements_cont_vert ul.achievement_list li { margin: 0; float: left; }
+*/
+
+
+
+
+
+/* marked for deletion : doesn't exist 
+.screenshot_viewer { width: 595px; height: 600px; background: #1a1a1a; }
+.screenshot_viewer .community_colB { width: 595px }
+.screenshot_viewer .community_colB .content_matte { margin: 0; padding: 0; } 
+.screenshot_viewer .header { background: transparent url(/images/base_struct_images/contentBg/communityfilesgradient.jpg) repeat-x; width: 100%; }
+.screenshot_viewer .header h1 { margin: 0; text-align: center; font: normal 24px/50px Arial, Helvetica, sans-serif; color: #fff; display: block; }
+.screenshot_viewer .header img.logoA { margin: 10px 0 0 10px; width: 85px; height: 33px; float: left; background: none; }
+.screenshot_viewer .header img.logoB { margin: 10px 10px 0 0; width: 67px; height: 30px; float: right; background: none; }
+.screenshot_viewer .screenshots { margin: 0 auto 0 auto; position: relative; width: 592px; height: 333px; background-color: Black; background-repeat: no-repeat; border: solid 1px #666; display: block; float: left; } 
+.screenshot_viewer .screenshots img.widescreen { width: 592px; height: 333px; }
+.screenshot_viewer .screenshots img.fourbythree { width: 444px; height: 333px; margin: 0 74px 0 74px; }
+.screenshot_viewer .nav_control { width: 100%; height: 30px; }
+.screenshot_viewer .nav_control .previmg { margin: 8px 0 0 6px;  }
+.screenshot_viewer .nav_control .nextimg { margin: 8px 6px 0 0; }
+.screenshot_viewer .nav_control .text_prev { float: left; padding: 0 0 0 5px; }
+.screenshot_viewer .nav_control .text_next { float: right; padding: 0 5px 0 0; }
+.screenshot_viewer .nav_control a { font: normal 12px/36px Arial, Helvetica, sans-serif; color: #71caef; }
+.screenshot_viewer .nav_control a:hover { font: normal 12px/36px Arial, Helvetica, sans-serif; color: #fff; }
+
+.screenshot_viewer .screenshot_box { width: 100%; margin: 0; padding: 0; border-left: none; border-right: none; border-bottom: none; border-width: 1px; float: left; }
+.screenshot_viewer .screenshot_box ul.infoA h3 { color: #bbb; }
+.screenshot_viewer .screenshot_box ul.infoA { width: 320px; margin: 0pt; padding: 5px 0pt 0pt 15px; float: left; list-style-type: none; color: #BBBBBB; }
+.screenshot_viewer .screenshot_box div.infoB { margin: 0; padding: 5px 0 5px  0; width: 166px; float: right; list-style-type: none; }
+.screenshot_viewer ul.links { float: right; list-style-type: none; clear: none; margin: 0; padding: 0; }
+.screenshot_viewer ul.links li { padding: 0 10px 0 0; float: left; font: normal 12px/15px Arial, Helvetica, sans-serif; }
+
+.screenshot_viewer .boxD_outer { margin: 0; padding: 0; }
+.screenshot_viewer .boxD { width: 591px; margin: 0; padding: 0; }
+.screenshot_viewer .boxD .nav_control { width: 591px; }
+.screenshot_viewer .boxD .nav_control h3 { padding: 0; }
+.screenshot_viewer .boxD .nav_control .previmg { margin: 3px 0 0 4px;  }
+.screenshot_viewer .boxD .nav_control .nextimg { margin: 3px 4px 0 0; }
+.screenshot_viewer .boxD .thumb_div { position: relative; }
+.screenshot_viewer .boxD .thumb_div .screenshot_thumb_cont { width: 58px; height: 32px; margin-left: 1px; float: left; background-color: Black; z-index: 2;}
+.screenshot_viewer .boxD .thumb_div .screenshot_thumb_selected { width: 58px; height: 28px; border-top: solid 2px #00A1E5; border-bottom: solid 2px #00A1E5; position: absolute; z-index: 3; margin-left: -58px;}
+.screenshot_viewer .boxD .thumb_div .screenshot_thumb_hover {
+	width: 58px;
+	height: 28px;
+	position: absolute;
+	z-index: 1;
+	margin-left: -58px;
+	background-image: url(/images/halo3stats/fileshareicons/screenshots/thumbnailarrow.gif);
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	background-position: center 5px;
+}
+.screenshot_viewer .boxD .screenshot_thumb { margin: 0; padding: 0; width: 58px; height: 32px; }
+.screenshot_viewer .boxD .screenshot_thumb_fourbythree { width: 44px; height: 32px; padding: 0; margin: 0 7px 2px 7px; }
+.screenshot_viewer .boxD .achievements_cont { margin: 5px 0 5px 0; padding: 0 0 0 1px; }
+.screenshot_viewer .boxD .achievements_cont img { margin: 0; padding: 0 0 0 1px; width: 58px; height: 32px; border: none; }
+
+
+
+
+.asset_viewer .cols { margin: 0; padding: 0; width: 100%; background-color: #1b1d1f;  } 
+.asset_viewer .cols .col { margin: 0; padding: 0; width: 100%; background-color: #1b1d1f; } 
+.asset_viewer .cols .col .block-a { margin: 0; padding: 0; width: 100%; } 
+.asset_viewer .cols .col .block-a h2 { width:100%; min-width: 300px; background: none; border-top: solid 2px #7e8083; border-bottom: solid 1px #7e8083; } 
+.asset_viewer .cols .col .block-a .controls_container { width: 400px; margin: 10px 0 0 20px; } 
+.asset_viewer .cols .col .block-a .controls_container .controls { float: left; margin: 0 50px 20px 0; } 
+.asset_viewer .cols .col .block-a .controls_container .controls h4 { margin:0; padding: 0; } 
+.asset_viewer .cols .col .block-a .controls_container .utility { height:30px; list-style-type:none; margin: 0; padding:0; float: left; }
+.asset_viewer .cols .col .block-a .controls_container .utility li { float:left; padding:0 20px 0 0; font-size:16px; } 
+.asset_viewer .cols .col .block-a .controls_container .utility li.previous { float: left;  } 
+.asset_viewer .cols .col .block-a .controls_container .utility li.next { float: left;  } 
+.asset_viewer .cols .col .block-a .controls_container .utility li.previous a:hover { text-decoration:none; } 
+.asset_viewer .cols .col .block-a .controls_container .utility li.next a:hover {  text-decoration:none; } 
+.asset_viewer .cols .col .block-a .image_summary { text-align:center; min-width: 150px; } 
+.asset_viewer .cols .col .block-a .image_summary h5 { margin: 10px 0 0 0; padding: 0; }
+*/
+
+/* marked for deletion : doesn't exist
+.mvp_cont .boxD_outer { border-width: 2px; }
+.mvp_cont .boxD { width: 194px; margin: 0; padding: 0; }
+.mvp_cont .boxD h3 { padding: 2px 0 2px 5px; }
+.mvp_cont .mvp { width: 194px; height: 78px; background: #5d0b0e; position:relative; }
+.mvp_cont .mvp img { width: 70px; height: 70px; position: absolute; top: 4px; left: 62px; margin: 0; border:none; }
+.mvp_cont .mvp_name { width: 189px; height: 24px; padding: 0 0 0 5px; background: #484848; line-height: 24px; font-weight: normal; border-top: 1px solid #575757; }
+*/
+
+
+
+/* marked for deletion : doesn't exist
+.header_bottom { height: 36px; margin: 0; padding: 0; border-bottom: solid 1px #2f2f2f;  overflow: hidden; background: url(/images/base_struct_images/contentBg/careerstatheader.jpg) repeat-x; }
+.header_bottom h1 { margin: 0; padding: 0 0 0 4px; float: left; font: 24px/33px Arial, Helvetica, sans-serif; color: #fff; }
+.header_bottom ul { float: right; list-style-type: none; padding: 0 4px 0 0; }
+.header_bottom ul li { float: left; font: 12px/33px Arial, Helvetica, sans-serif; }
+*/
+/* marked for deletion : doesn't exist 
+.all_jobs_link img {float:right; margin-left:5px; width:14px; height:15px; display:block; background: transparent url('/images/inside/arrow.gif') no-repeat left top;}
+.all_jobs_link span {float:right;}
+.all_jobs_link:hover img {  background: transparent url('/images/inside/arrow.gif') no-repeat left bottom;}
+
+ul.miniJobsUL { list-style-type: none; margin: 0 0 0 -15px; display: block; width: 282px; padding: 0; }
+ul.miniJobsUL li.jobitem { background: url(/images/base_struct_images/arrow_3.gif) no-repeat; text-align: left; margin: 0 0 1px 30px; }
+ul.miniJobsUL li.jobitem a { font: 11px/14px Arial, Helvetica, sans-serif; color: #71caef; text-decoration: none; padding: 0 0 0 13px; }
+ul.miniJobsUL li.jobitem a:hover { color: #fff; text-decoration: underline; }
+ul.miniJobsUL li.categoryItemOff { padding: 0 0 0 35px; height: 30px; margin: 2px 0 3px 0; background-image: url(/images/inside/jobs/expandbutton.gif); background-position: 0 0; background-repeat: no-repeat; font:  14px/28px Arial, Helvetica, sans-serif; color: #dad9d9;}
+ul.miniJobsUL li.categoryItemOff:hover { background-position: 0 -30px;  }
+ul.miniJobsUL li.categoryItemOn { padding: 0 0 0 35px; height: 30px; margin: 2px 0 3px 0; background-image: url(/images/inside/jobs/expandbutton.gif); background-position: 0 -60px; background-repeat: no-repeat; font:  14px/28px Arial, Helvetica, sans-serif; color: #dad9d9;}
+ul.miniJobsUL li.categoryItemOn:hover { background-position: 0 -90px; }
+*/

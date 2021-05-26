@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.bungie.net	TRUE	/	FALSE	1999999999	__cfduid	d09c025ce39474f1f4bf56dab5a2e839d1612455371
+halo.bungie.net	TRUE	/	FALSE	1999999999	SameSite	Lax
+halo.bungie.net	TRUE	/	FALSE	1999999999	page	Chapters&SubjectText=&BodyText=
+halo.bungie.net	TRUE	/	FALSE	1999999999	player	LegionDude1&SubjectText=&BodyText=
+halo.bungie.net	TRUE	/	FALSE	1999999999	ibbblob	dtLastVisit=2/4/2021 12:38:48 PM&sLastURL=/Stats/Reach/FileDetails.aspx?fid=27414843&SubjectText=&BodyText=
+halo.bungie.net	TRUE	/	FALSE	1999999999	cf_ob_info	524:61c77dac98ed1e9d:AMS
+halo.bungie.net	TRUE	/	FALSE	1999999999	cf_use_ob	0
+bungie.net	TRUE	/	FALSE	1999999999	BlamDotNet	EDM=410092198
+

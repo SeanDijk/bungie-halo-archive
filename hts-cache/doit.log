@@ -1,0 +1,8 @@
+-qir2C1%Ps2u1%s%uN100%I0p3DaK0H0%kf2%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://halo.bungie.net/stats/reach/default.aspx?player=sean117vd https://halo.bungie.net/stats/reach/default.aspx?player=mart%20S%20117 https://halo.bungie.net/Stats/Reach/Default.aspx?player=Player3th0mas&sg=0 https://halo.bungie.net/Stats/Reach/Default.aspx?player=HardcoreYorkie https://halo.bungie.net/Stats/Reach/Default.aspx?player=Kenan+S117&sg=0 https://halo.bungie.net/Stats/Reach/Default.aspx?player=Kenan+S239&sg=0 https://halo.bungie.net/Stats/Reach/Default.aspx?player=Henkibrij&sg=0 https://halo.bungie.net/Stats/Reach/Default.aspx?player=Legiondude1&sg=0 https://halo.bungie.net/Stats/Reach/Default.aspx?player=Sirolf0Reversed&sg=0 -O1 "C:\My Web Sites\edfg" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*/*player=* +*/*sean117vd* +*/*mart%20S%20117* +*/*Sirolf0Reversed* +*/*Player3Th0mas* +*/*Henkibrij* +*/*HardcodeYorkie* +*/*Kenan%20S117* +*/*Kenan%20S239* +*/*LegionDude1* -%! +*/*.axd*
+File generated automatically on Thu, 04 Feb 2021 23:11:23, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

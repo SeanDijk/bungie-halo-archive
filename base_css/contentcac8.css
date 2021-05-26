@@ -1,0 +1,102 @@
+/* do not move these styles to a seperate file */
+ul.cms_arrowNews {
+	font-family: arial,verdana,tahoma;
+	color: #bbbbbb;
+	line-height: 28px;
+	list-style-image: url(https://halo.bungie.net/images/base_struct_images/news/arrow.gif);
+	font-size: 16px !important;
+}
+
+p.cms_quote {
+	background-color: #232323;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 2px solid #676767;
+	padding: 10px;
+	width: 97%;
+	text-align: center;
+	font-size: 20px !important;
+	color: #aaaaaa;
+	line-height: 27px;
+	font-family: arial,verdana,tahoma;
+}
+
+p.cms_important {
+	background-color: #3a0808;
+	border: 2px solid #591010;
+	padding: 10px;
+	color: #cd2424;
+	line-height: 35px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	width: 97%;
+	text-align: center;
+	font-size: 20px !important;
+	font-family: arial,verdana,tahoma;
+}
+
+p.cms_question {
+	background-color: #062538;
+	border: 2px solid #114464;
+	font-size: 18px !important;
+	color: #2c8cca;
+	line-height: 25px;
+	text-align: left;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	width: 97%;
+	font-family: arial,verdana,tahoma;
+}
+
+ul.cms_horizontalImg {
+	margin-left: 0px;
+	padding: 0px;
+	white-space: nowrap;
+}
+
+ul.cms_horizontalImg li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 26px;
+}
+
+h6.cms_odstNewsHeader  {
+	background-image: url('https://halo.bungie.net/images/base_struct_images/news/odst_news_header.jpg');
+	width: 693px;
+	height: 27px;
+	color: #848484;
+	font-family: arial,verdana,tahoma;
+	font-size: 20px !important;
+	padding: 10px 0 0 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h6.cms_halo3NewsHeader {
+	background-image: url('https://halo.bungie.net/images/base_struct_images/news/halo3_news_header.jpg');
+	color: #031521;
+	width: 693px;
+	height: 27px;
+	font-family: arial,verdana,tahoma;
+	font-size: 20px !important;
+	padding: 10px 0 0 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h6.cms_simpleNewsHeaderGray {
+	width: 99%;
+	height: 27px;
+	color: #bbbbbb;
+	border-bottom: 1px solid #676767;
+	background: none;
+	font-family: arial,verdana,tahoma;
+	font-size: 20px !important;
+	padding: 10px 0 0 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height:1em;
+}
+

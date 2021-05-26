@@ -1,0 +1,117 @@
+﻿div.careerStats
+{
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_playerModelLines.png) no-repeat 33px 27px;
+	position:relative;
+	float:left;
+	margin-bottom:7px;
+        		
+}
+	div.careerStats .playerModel
+	{
+		position:absolute;
+		left:18px;
+		top:-15px;
+	}
+	div.careerStats ul.alternatingList
+	{
+		width:212px;
+		padding-top:13px;
+		position:relative;
+		float:left;
+		margin:0 10px 22px 233px;
+	}
+	/* service record pie */
+	div.careerStats div.bg_pieGraph
+	{
+		position:absolute;
+		top:13px;
+		right:14px;
+		width:200px;
+		height:179px;
+		border:1px solid #404040;			
+	}
+		div.careerStats div.bg_pieGraph img
+		{
+			height:138px;
+			left:32px;
+			position:absolute;
+			top:26px;
+			width:137px;
+		}
+	
+		div.careerStats div.pieGraph
+		{
+			width:135px;
+			height:135px;
+			margin:28px auto 0;	
+		}
+	
+		div.careerStats div.bg_pieGraph ul.legend{bottom:-57px;width:202px;}
+			div.careerStats div.bg_pieGraph ul.legend li{float:left;background:url(https://halo.bungie.net/images/reachStats/rule_transparent.png) repeat-x bottom;}
+div.commendations
+{
+	background:url(https://halo.bungie.net/images/reachStatsNew/bg_commendationsBox.png) no-repeat 0 0;
+	width:421px;
+	margin-left:233px;
+	margin-bottom:18px;
+	float:left;
+	position:relative;
+	padding:16px 0 10px;
+	min-height:41px;
+}
+	div.commendations p.heading
+	{
+		color:#fff;
+		font-size:11px;
+		left:13px;
+		position:absolute;
+		text-align:right;
+		top:-8px;
+		width:387px;
+	}
+		div.commendations p.heading strong
+		{
+			font-weight:normal;
+			font-size:11px;
+			float:left;		
+		}
+        		
+		div.commendations p.heading a
+		{
+			font-size:11px;
+		}
+	div.commendations ul.images
+	{
+		margin-bottom:0;
+		text-align:center;
+	}
+		div.commendations ul.images li
+		{
+		    display:inline;
+		    position:relative;
+		}
+		div.commendations ul.images li:hover
+		{
+		        	
+		}
+		    #jsDisabled div.commendations ul.images li:hover div.popOut
+		    {
+		        display:block;
+		        top:-170px;
+		        left:-250px;
+		    }
+		        
+		div.commendations ul.images li
+		{
+			margin-left:4px;
+		}
+			div.commendations ul.images li:first-child
+			{
+				margin-left:0;
+			}
+			div.commendations ul.images li img.notier
+			{
+			    opacity: 0.35;
+			}
+	div.topFiles{margin-bottom:0;}    
+        div.topFiles a.btn_more{text-transform:none;}
